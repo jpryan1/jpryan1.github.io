@@ -12,7 +12,7 @@ I am a graduate student studying Computer Vision and Machine Learning in the Rob
 
 John Paul Ryan <br />
 Phone: (518)-925-7228 <br/>
-Email: [johnryan1@cmu.edu]
+Email: [johnryan@cmu.edu]
 
 
-[johnryan1@cmu.edu]: mailto:johnryan1@cmu.edu
+[johnryan@cmu.edu]: mailto:johnryan@cmu.edu
