@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /projects/
-title: Projects
+permalink: /Projects/
+title: Research
 pubs:
 
     - title:   "Path Planning for Simple Robots using Soft Subdivision Search"
@@ -15,9 +15,29 @@ pubs:
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
-          
 
+    - title:   "Coloring Blocks of Consecutive Integers to Forbid Three Distances"
+      author:  "John Paul Ryan"
+      journal: "Geombinatorics"
+      note:    ""
+      year:    "(2016)"
+      url:     "/color.pdf"
+      doi:     ""
+      image:   "/graph.png"
+
+    - title:   "Theoretical Friends of Finite Proximity"
+      author:  "Edna Jones and John Paul Ryan"
+      journal: "International Journal of Mathematics and Computer Science"
+      note:    ""
+      year:    "(2015)"
+      url:     "http://ijmcs.future-in-tech.net/10.2/R-Jones-Ryan.pdf"
+      doi:     ""
+      image:   "/math.png"
+
+   
 ---
+
+## Publications
 
 {% assign thumbnail="left" %}
 
