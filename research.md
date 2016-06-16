@@ -17,7 +17,6 @@ pubs:
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
          
         
-
     - title:   "Cloring Blocks of Consecutive Integers to Forbid Three Distances"
       author:  "John Paul Ryan"
       journal: "Geombinatorics"
@@ -29,7 +28,6 @@ pubs:
       media:
       
 
----
 
 ## Publications
 
