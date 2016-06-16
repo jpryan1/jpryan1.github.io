@@ -58,6 +58,6 @@ pubs:
 {% endif %}
 **{{pub.title}}**<br />
 {{pub.note}} <br />
-{% if pub.media %}<br />{% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}{% endif %}
+{% if pub.media %}{% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}{% endif %}
 
 {% endfor %}
