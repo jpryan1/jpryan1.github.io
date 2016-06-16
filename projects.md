@@ -27,7 +27,7 @@ pubs:
           
         
     - title:   "Stress Detection Using Techniques From Computer Vision"
-      note:    "This was a project for my Social Networks class at NYU. The program finds the user's mouth using Haar Cascade Classification, and then identifies the crease of the lips by convolving with certain Morlet Wavelets and identifying noisy regions (more details in the paper). Ultimately, the curvature of the lips is compared against a learned threshold (depending on the person), and the stress level of the user is evaluated. The ultimate goal is this: to alert desk dwelling employees when they should take a break from their work and have a walk!"
+      note:    "This was a project for my Social Networks class at NYU. The program finds the user's mouth using Haar Cascade Classification, and then identifies the crease of the lips by convolving with certain Morlet Wavelets and identifying noisy regions (more details in the paper). Ultimately, the curvature of the lips is compared against a learned threshold (depending on the person), and the stress level of the user is evaluated. The ultimate goal is this: to alert desk-dwelling employees when they should take a break from their work and have a walk!"
       image:   "/stress1.png"
       media:
         - name: "Paper"
@@ -37,6 +37,15 @@ pubs:
         - name: "Source"
           url: "https://github.com/jpryan1/stress-test"
           
+        
+    - title:   "Cinema Information Retrieval from Wikipedia"
+      note:    "sdf"
+      image:   "/cinema1.png"
+      media:
+        - name: "Paper"
+          url:  "/cinema.pdf"
+        - name: "Source"
+          url: "https://github.com/jpryan1/cinema-info"
 ---
 
 
