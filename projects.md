@@ -39,7 +39,7 @@ pubs:
           
         
     - title:   "Cinema Information Retrieval from Wikipedia"
-      note:    "sdf"
+      note:    "In this project, I explored various methods for information retrieval from a text corpus and how they compare when used to find the common link between several elements of a query. I did so with several experiments on a corpus of Wikipedia articles on movies and actors in cinema. This was my first project as a CS major, and I spend the majority of the time learning to write a program to scrape the Wiki articles!"
       image:   "/cinema1.png"
       media:
         - name: "Paper"
