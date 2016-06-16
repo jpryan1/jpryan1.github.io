@@ -20,16 +20,21 @@ pubs:
           url:  "/uav.pdf"
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=Ibve4-tSOPM"
+        - name: "Source"
+          url: "https://github.com/jpryan1/uav-pursuit"
           
         
     - title:   "Stress Detection Using Techniques From Computer Vision"
-      note:    "This was a group project for my Robotics class at NYU, and my group members were Andrew Klingelhofer and Jacqui Abalo. We passed video from a flying Parrot Bebop 2.0 drone through the object tracking program described in <a href='http://www.gnebehay.com/publications/wacv_2014/wacv_2014.pdf'> this </a> paper to track the clothing of a person in front of the drone. We then passed the results of the object tracking program through a Kalman Filter, and, based on these filtered results, issued commands to the drone to navigate so as to keep the object in view. The hardest part was getting video feed from the drone to the computer! More details are in the paper."
+      note:    "This was a project for my Social Networks class at NYU. The program finds the user's mouth using Haar Cascade Classification, and then identifies the crease of the lips by convolving with certain Morlet Wavelets and identifying noisy regions (more details in the paper). Ultimately, the curvature of the lips is compared against a learned threshold (depending on the person), and the stress level of the user is evaluated. The ultimate goal is this: to alert desk dwelling employees when they should take a break from their work and have a walk!"
       image:   "/stress1.png"
       media:
         - name: "Paper"
           url:  "/stress.pdf"
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=WGSRE9fRaE0"
+        - name: "Source"
+          url: "https://github.com/jpryan1/stress-test"
+          
 ---
 
 
