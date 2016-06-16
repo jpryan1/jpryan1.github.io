@@ -11,7 +11,7 @@ pubs:
       year:    "2016"
       url:     "http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=5960"
       doi:     ""
-      image:   "http://imgur.com/jCdF465"
+      image:   "/robpic.jpg"
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
