@@ -27,6 +27,7 @@ pubs:
       image:   "/graph.png"
       media:
       
+
     - title:   "Theoretical Friends of Finite Proximity"
       author:  "Edna Jones and John Paul Ryan"
       journal: "International Journal of Mathematics and Computer Science"
@@ -36,6 +37,7 @@ pubs:
       doi:     ""
       image:   "/math.png"
       media:
+      
    
 ---
 
