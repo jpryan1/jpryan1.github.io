@@ -5,7 +5,7 @@ title: Projects
 pubs:
 
     - title:   "Counter-Rotation of 'Pancake' of Sliding Discs in Swirling Environment"
-      note:    "GGG"
+      note:    "I am currently working with <a href='http://cims.nyu.edu/~holmes/'> Miranda Holmes-Cerfon </a> on a physical simulation of sliding discs inside a circular boundary which moves around in a circle (see the demo). When a certain density of discs inside the boundary is achieved, an interesting 'counter-rotation' phenomenon occurs. Our goal is to understand intuitively why this takes place, and what are the main contributing factors (ie friction, speed, etc). This is a summer research project funded by the Courant Institute of Mathematical Sciences."
       image:   "/pic.png"
       media:
         - name: "Demo"
