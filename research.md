@@ -16,15 +16,7 @@ pubs:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
 
-    - title:   ""Coloring Blocks of Consecutive Integers to Forbid Three Distances"
-      author:  "John Paul Ryan"
-      journal: "Geombinatorics"
-      note:    ""
-      year:    "(2016)"
-      url:     "/color.pdf"
-      doi:     ""
-      image:   "/graph.png"
-      media:   ""
+  
       
 
    
