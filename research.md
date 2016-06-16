@@ -8,16 +8,13 @@ pubs:
       author:  "Ching-Hsiang Hsu, John Paul Ryan, and Chee Yap"
       journal: "32nd International Symposium on Computational Geometry"
       note:    ""
-      year:    "(2016)"
+      year:    "2016"
       url:     "http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=5960"
       doi:     ""
       image:   "/robpic.png"
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
-
-  
-      
 
    
 ---
@@ -34,5 +31,6 @@ pubs:
 {{pub.author}}<br />
 *{{pub.journal}}*
  *{{pub.year}}* 
+{% if pub.media %}<br />Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}{% endif %}
 
 {% endfor %}
