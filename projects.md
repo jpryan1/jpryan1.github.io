@@ -9,7 +9,7 @@ pubs:
       image:   "/pic.png"
       media:
         - name: "Demo"
-          url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
+          url:  "https://www.youtube.com/watch?v=nCTWe_epuL8"
           
         
 
