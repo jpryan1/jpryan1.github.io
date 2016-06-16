@@ -20,8 +20,16 @@ pubs:
           url:  "/uav.pdf"
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=Ibve4-tSOPM"
+          
         
-
+    - title:   "Stress Detection Using Techniques From Computer Vision"
+      note:    "This was a group project for my Robotics class at NYU, and my group members were Andrew Klingelhofer and Jacqui Abalo. We passed video from a flying Parrot Bebop 2.0 drone through the object tracking program described in <a href='http://www.gnebehay.com/publications/wacv_2014/wacv_2014.pdf'> this </a> paper to track the clothing of a person in front of the drone. We then passed the results of the object tracking program through a Kalman Filter, and, based on these filtered results, issued commands to the drone to navigate so as to keep the object in view. The hardest part was getting video feed from the drone to the computer! More details are in the paper."
+      image:   "/stress1.png"
+      media:
+        - name: "Paper"
+          url:  "/stress.pdf"
+        - name: "Demo"
+          url:  "https://www.youtube.com/watch?v=WGSRE9fRaE0"
 ---
 
 
