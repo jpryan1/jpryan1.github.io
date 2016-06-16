@@ -15,17 +15,15 @@ pubs:
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
-          
 
-    - title:   "Cloring Blocks of Consecutive Integers to Forbid Three Distances"
+    - title:   ""Coloring Blocks of Consecutive Integers to Forbid Three Distances"
       author:  "John Paul Ryan"
       journal: "Geombinatorics"
       note:    ""
-      year:    "(April 2016)"
+      year:    "(2016)"
       url:     "/color.pdf"
       doi:     ""
       image:   "/graph.png"
-      media:
       
 
    
@@ -43,7 +41,6 @@ pubs:
 {{pub.author}}<br />
 *{{pub.journal}}*
  *{{pub.year}}* 
-{% if pub.note %} {% pub.note %} {% endif %}
 {% if pub.media %}<br />Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}{% endif %}
 
 {% endfor %}
