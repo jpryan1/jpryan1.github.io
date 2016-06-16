@@ -1,43 +1,19 @@
 ---
 layout: page
-permalink: /Projects/
-title: Research
+permalink: /projects/
+title: Projects
 pubs:
 
-    - title:   "Path Planning for Simple Robots using Soft Subdivision Search"
-      author:  "Ching-Hsiang Hsu, John Paul Ryan, and Chee Yap"
-      journal: "32nd International Symposium on Computational Geometry"
-      note:    ""
-      year:    "(2016)"
-      url:     "http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=5960"
-      doi:     ""
+    - title:   "Counter-rotation of 'Pancake' of Sliding Discs in Swirling Environment"
+      note:    "GGG"
       image:   "/robpic.png"
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
 
-    - title:   "Coloring Blocks of Consecutive Integers to Forbid Three Distances"
-      author:  "John Paul Ryan"
-      journal: "Geombinatorics"
-      note:    ""
-      year:    "(2016)"
-      url:     "/color.pdf"
-      doi:     ""
-      image:   "/graph.png"
-
-    - title:   "Theoretical Friends of Finite Proximity"
-      author:  "Edna Jones and John Paul Ryan"
-      journal: "International Journal of Mathematics and Computer Science"
-      note:    ""
-      year:    "(2015)"
-      url:     "http://ijmcs.future-in-tech.net/10.2/R-Jones-Ryan.pdf"
-      doi:     ""
-      image:   "/math.png"
-
-   
 ---
 
-## Publications
+
 
 {% assign thumbnail="left" %}
 
@@ -45,10 +21,8 @@ pubs:
 {% if pub.image %}
 {% include image.html url=pub.image caption="" height="100px" align=thumbnail %}
 {% endif %}
-[**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br />
-{{pub.author}}<br />
-*{{pub.journal}}*
- *{{pub.year}}* 
+**{{pub.title}}**<br />
+pub.note <br />
 {% if pub.media %}<br />Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}{% endif %}
 
 {% endfor %}
