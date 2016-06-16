@@ -24,7 +24,7 @@ pubs:
       url:     "/color.pdf"
       doi:     ""
       image:   "/graph.png"
-      media:
+      media:   ""
       
 
    
