@@ -6,7 +6,7 @@ pubs:
 
     - title:   "Counter-Rotation of 'Pancake' of Sliding Discs in Swirling Environment"
       note:    "GGG"
-      image:   "/robpic.png"
+      image:   "/pic.png"
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
