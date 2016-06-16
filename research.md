@@ -24,7 +24,15 @@ pubs:
       url:     "/color.pdf"
       doi:     ""
       image:   "/graph.png"
-      media:
+
+    - title:   "Coloring Blocks of Consecutive Integers to Forbid Three Distances"
+      author:  "John Paul Ryan"
+      journal: "Geombinatorics"
+      note:    ""
+      year:    "(2016)"
+      url:     "/color.pdf"
+      doi:     ""
+      image:   "/graph.png"
 
    
 ---
