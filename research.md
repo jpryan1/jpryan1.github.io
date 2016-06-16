@@ -28,17 +28,6 @@ pubs:
       media:
       
 
-    - title:   "Theoretical Friends of Finite Proximity"
-      author:  "Edna Jones and John Paul Ryan"
-      journal: "International Journal of Mathematics and Computer Science"
-      note:    ""
-      year:    "(2015)"
-      url:     "http://ijmcs.future-in-tech.net/10.2/R-Jones-Ryan.pdf"
-      doi:     ""
-      image:   "/math.png"
-      media:
-      
-   
 ---
 
 ## Publications
