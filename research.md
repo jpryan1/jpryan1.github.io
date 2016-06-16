@@ -15,6 +15,19 @@ pubs:
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
+          
+
+     - title:   "Path Planning for Simple Robots using Soft Subdivision Search"
+      author:  "Ching-Hsiang Hsu, John Paul Ryan, and Chee Yap"
+      journal: "32nd International Symposium on Computational Geometry"
+      note:    ""
+      year:    "2016"
+      url:     "http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=5960"
+      doi:     ""
+      image:   "/robpic.png"
+      media:
+        - name: "Demo"
+          url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
 
    
 ---
