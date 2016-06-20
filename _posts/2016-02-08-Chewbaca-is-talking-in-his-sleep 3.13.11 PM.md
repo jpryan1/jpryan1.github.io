@@ -1,4 +1,3 @@
-!.gitignore
 ---
 layout: post
 title: "Chewybaca is talking in his sleep"
