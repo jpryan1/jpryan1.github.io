@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-
+To be updated soon!
 <ul class="listing">
 {% for post in site.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
