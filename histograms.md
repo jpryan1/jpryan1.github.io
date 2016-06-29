@@ -13,7 +13,13 @@ permalink: /histograms
 <br>
 <a href="histograms#N">Varying Number of Spheres </a>
 <br><br>
+
 <h3>Default:</h3><br> Sphere/Sphere Friction (mu): 2<br> Wall/Sphere Friction (wmu): 4<br> Boundary Amplitude (amp): 0.5<br> Number of Spheres (N): 13<br>
+Initial Momentum: 1.8165000000000002
+Final Momentum: 0.39029800982234564
+Average Momentum: -2.3990410102472923
+{% include image.html url="defaulthist.jpg" caption="" max_width="100px" align="center" %}
+
 
 <div id="mu">
 <h3>Varying Sphere/Sphere Friction</h3>
