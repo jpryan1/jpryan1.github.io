@@ -5,13 +5,13 @@ permalink: /histograms
 ---
 
 
-<a href="www.johnpaulryan.com/histograms#mu">Varying Sphere/Sphere Friction </a>
+<a href="histograms#mu">Varying Sphere/Sphere Friction </a>
 </br>
-<a href="www.johnpaulryan.com/histograms#wmu">Varying Wall/Sphere Friction </a>
+<a href="histograms#wmu">Varying Wall/Sphere Friction </a>
 </br>
-<a href="www.johnpaulryan.com/histograms#amp">Varying Boundary Amplitude</a>
+<a href="histograms#amp">Varying Boundary Amplitude</a>
 </br>
-<a href="www.johnpaulryan.com/histograms#N">Varying Number of Spheres </a>
+<a href="histograms#N">Varying Number of Spheres </a>
 </br>
 
 Foo
