@@ -4,6 +4,17 @@ title: Histograms
 permalink: /histograms
 ---
 
+<h4>Description:</h4>
+<br>This page contains histograms which detail the contribution of sphere/sphere and wall/sphere collisions to the counter-rotation phenomenon observed in the simulations. The intensity of this phenomenon is estimated by measuring the average total angular momentum of the spheres about their center of mass across a span of 1000 collisions (about 50 seconds of swirling).  <br>
+Before each image, three statistics are listed: the initial angular momentum, the final angular momentum, and the average angular momentum. Since the input configuration of the spheres (initial positions and velocities) is never modified, the initial angular momentum is the same across all experiments. The final angular momentum is the measured angular momentum after the 1000th (and final) collision of the experiment. The average angular momentum across all collisions tends to be negative when the phenomenon occurs. <br>
+The title of each histogram includes the sum of all changes to total angular momentum displayed. As a sanity check, notice that the sum of all changes to angular momentum by sphere/sphere collisions and wall/sphere collisions is the difference between initial and final angular momentum. If you want to see a bigger version of an image, just click on it. 
+<h3>Default:</h3><br> Sphere/Sphere Friction (mu): 2<br> Wall/Sphere Friction (wmu): 4<br> Boundary Amplitude (amp): 0.5<br> Number of Spheres (N): 13<br>
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: 0.39029800982234564<br>
+Average Angular Momentum: -2.3990410102472923<br></p>
+<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
+
 
 <a href="histograms#mu">Varying Sphere/Sphere Friction </a>
 <br>
@@ -12,24 +23,11 @@ permalink: /histograms
 <a href="histograms#amp">Varying Boundary Amplitude</a>
 <br>
 <a href="histograms#N">Varying Number of Spheres </a>
-<br><br>
-
-<h3>Default:</h3><br> Sphere/Sphere Friction (mu): 2<br> Wall/Sphere Friction (wmu): 4<br> Boundary Amplitude (amp): 0.5<br> Number of Spheres (N): 13<br>
-<h4>What's going on?</h4>
-<br>This page contains histograms which detail the contribution of sphere/sphere and wall/sphere collisions to the counter-rotation phenomenon observed in the simulations. The intensity of this phenomenon is estimated by measuring the average total angular momentum of the spheres about their center of mass across a span of 1000 collisions (about 50 seconds of swirling).  <br>
-Before each image, three statistics are listed: the initial angular momentum, the final angular momentum, and the average angular momentum. Since the input configuration of the spheres (initial positions and velocities) is never modified, the initial angular momentum is the same across all experiments. The final angular momentum is the measured angular momentum after the 1000th (and final) collision of the experiment. The average angular momentum across all collisions tends to be negative when the phenomenon occurs. <br>
-The title of each histogram includes the sum of all changes to total angular momentum displayed. As a sanity check, notice that the sum of all changes to angular momentum by sphere/sphere collisions and wall/sphere collisions is the difference between initial and final angular momentum. If you want to see a bigger version of an image, just click on it. 
-<p style="text-align:center;font-size:80%;" >
-Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: 0.39029800982234564<br>
-Average Angular Momentum: -2.3990410102472923<br></p>
-<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
-
 
 <div id="mu">
 <h3>Varying Sphere/Sphere Friction</h3>
 </div>
-mu = 0
+mu = 0<br> Note that sphere/sphere collisions contribute nothing to total angular momentum in this case, since they are elastic.
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
 Final Angular Momentum: 4.436919282387839<br>
