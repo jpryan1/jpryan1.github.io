@@ -15,9 +15,9 @@ permalink: /histograms
 <br><br>
 
 <h3>Default:</h3><br> Sphere/Sphere Friction (mu): 2<br> Wall/Sphere Friction (wmu): 4<br> Boundary Amplitude (amp): 0.5<br> Number of Spheres (N): 13<br>
-Initial Momentum: 1.8165000000000002
-Final Momentum: 0.39029800982234564
-Average Momentum: -2.3990410102472923
+Initial Momentum: 1.8165000000000002<br>
+Final Momentum: 0.39029800982234564<br>
+Average Momentum: -2.3990410102472923<br>
 {% include image.html url="defaulthist.jpg" caption="" max_width="100px" align="center" %}
 
 
