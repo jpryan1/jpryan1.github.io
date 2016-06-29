@@ -82,16 +82,12 @@ Average Angular Momentum: -2.3506385698182393<br>
 <h3>Varying Wall/Sphere Friction</h3>
 </div>
 Foo
-{% include image.html url="photo.jpg" caption="" max_width="300px" align="center" %}
-
 
 
 <div id="amp">
 <h3>Varying Boundary Amplitude</h3>
 </div>
 Foo
-{% include image.html url="photo.jpg" caption="" max_width="300px" align="center" %}
-
 
 
 
@@ -100,7 +96,6 @@ Foo
 <h3>Varying Number of Spheres</h3>
 </div>
 Foo
-{% include image.html url="photo.jpg" caption="" max_width="300px" align="center" %}
 
 
 
