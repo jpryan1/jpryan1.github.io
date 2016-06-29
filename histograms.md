@@ -22,7 +22,7 @@ Before each image, three statistics are listed: the initial angular momentum, th
 Initial Angular Momentum: 1.8165000000000002<br>
 Final Angular Momentum: 0.39029800982234564<br>
 Average Angular Momentum: -2.3990410102472923<br></p>
-{% include image.html url="defaulthist.png" caption="" max_width="100px" align="center" %}
+<img src="defaulthist.png" />
 
 
 <div id="mu">
