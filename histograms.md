@@ -75,7 +75,49 @@ Average Angular Momentum: -2.177460321892875<br>
 <div id="wmu">
 <h3>Varying Wall/Sphere Friction</h3>
 </div>
-Foo
+wmu = 0
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -5.329200688200184<br>
+Average Angular Momentum: -1.4204688418286706<br>
+</p>
+<a href="wmu0.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu0.png" ></a>
+wmu = 0.2
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: 1.9609167609707332<br>
+Average Angular Momentum: -2.055621564987872<br>
+</p>
+<a href="wmu1.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu1.png" ></a>
+wmu = 0.4
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -3.537465049562623<br>
+Average Angular Momentum: -2.183250948370748<br>
+</p>
+<a href="wmu2.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu2.png" ></a>
+wmu = 0.6
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -1.2822668671922113<br>
+Average Angular Momentum: -1.9615761602213135<br>
+</p>
+<a href="wmu3.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu3.png" ></a>
+wmu = 0.8
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -0.5158517065661707<br>
+Average Angular Momentum: -2.2246446957179224<br>
+</p>
+<a href="wmu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu4.png" ></a>
+wmu = 1.0
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -2.5362909438308616<br>
+Average Angular Momentum: -2.177460321892875<br>
+</p>
+<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
+
 
 
 <div id="amp">
