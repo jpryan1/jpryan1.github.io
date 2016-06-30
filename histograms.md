@@ -11,8 +11,9 @@ The title of each histogram includes the sum of all changes to total angular mom
 <h3>Default:</h3><br> Sphere/Sphere Friction (mu): 1<br> Wall/Sphere Friction (wmu): 4<br> Boundary Amplitude (amp): 0.5<br> Number of Spheres (N): 13<br>
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: 0.39029800982234564<br>
-Average Angular Momentum: -2.3990410102472923<br></p>
+Final Angular Momentum: -4.698187263524518<br>
+Average Angular Momentum: -2.3053073243280124<br>
+</p>
 <a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
 
 
@@ -37,36 +38,36 @@ Average Angular Momentum: -0.1346943994896573<br>
 mu = 0.2
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -0.35438184325433686<br>
-Average Angular Momentum: -1.843237454029892<br>
+Final Angular Momentum: -0.5486009545561434<br>
+Average Angular Momentum: -1.040932894895143<br>
 </p>
 <a href="mu1.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu1.png" ></a>
 mu = 0.4
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -4.698187263524518<br>
-Average Angular Momentum: -2.3053073243280124<br>
+Final Angular Momentum: 4.774021462131953<br>
+Average Angular Momentum: -1.5383139586597625<br>
 </p>
 <a href="mu2.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu2.png" ></a>
 mu = 0.6
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -7.082148915045604<br>
-Average Angular Momentum: -2.3685067420080035<br>
+Final Angular Momentum: -2.1409956195197575<br>
+Average Angular Momentum: -2.0146232188262676<br>
 </p>
 <a href="mu3.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu3.png" ></a>
 mu = 0.8
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: 0.39029800982234564<br>
-Average Angular Momentum: -2.3990410102472923<br>
+Final Angular Momentum: -4.899989874022614<br>
+Average Angular Momentum: -2.027617385009494<br>
 </p>
 <a href="mu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu4.png" ></a>
 mu = 1.0
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -0.10726621487923393<br>
-Average Angular Momentum: -2.4223254207736202<br>
+Final Angular Momentum: -4.698187263524518<br>
+Average Angular Momentum: -2.3053073243280124<br>
 </p>
 <a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
 
