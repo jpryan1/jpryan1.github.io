@@ -158,7 +158,7 @@ Final Angular Momentum: 1.2163548921263176<br>
 Average Angular Momentum: 2.3676806608775807<br>
 </p>
 <a href="amp3.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp3.png" ></a>
-mu = 1.5
+amp = 1.5
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
 Final Angular Momentum: -4.415695771561229<br>
@@ -172,7 +172,48 @@ Average Angular Momentum: 2.6015201983173624<br>
 <div id="N">
 <h3>Varying Number of Spheres</h3>
 </div>
-Foo
+N = 8
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 0.3150000000000004<br>
+Final Angular Momentum: -0.015327855507005772<br>
+Average Angular Momentum: 0.9003599431103011<br>
+</p>
+<a href="n0.png" > <img style="margin:0px auto;display:block;width:600px;" src="n0.png" ></a>
+N = 9
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 0.05833333333333279<br>
+Final Angular Momentum: 4.499391733274962<br>
+Average Angular Momentum: 0.7493111651378899<br>
+</p>
+<a href="n1.png" > <img style="margin:0px auto;display:block;width:600px;" src="n1.png" ></a>
+N = 10
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 6.761999999999998<br>
+Final Angular Momentum: 5.078967024418938<br>
+Average Angular Momentum: 0.6538657767051941<br>
+</p>
+<a href="n2.png" > <img style="margin:0px auto;display:block;width:600px;" src="n2.png" ></a>
+N = 11
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 6.200727272727271<br>
+Final Angular Momentum: 2.0826243891649727<br>
+Average Angular Momentum: 0.4622010470094366<br>
+</p>
+<a href="n3.png" > <img style="margin:0px auto;display:block;width:600px;" src="n3.png" ></a>
+N = 12
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8164999999999991<br>
+Final Angular Momentum: 1.4418048460199062<br>
+Average Angular Momentum: -0.2275961624252202<br>
+</p>
+<a href="n4.png" > <img style="margin:0px auto;display:block;width:600px;" src="n4.png" ></a>
+N = 13
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -4.240073606444323<br>
+Average Angular Momentum: -0.3869276931644715<br>
+</p>
+<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
 
 
 
