@@ -70,6 +70,8 @@ Final Angular Momentum: 1.9609167609707332<br>
 Average Angular Momentum: -2.055621564987872<br>
 </p>
 <a href="mu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu4.png" ></a>
+<h4>Change in Angular Momentum:</h4>
+<a href="plot1.png" > <img style="margin:0px auto;display:block;width:600px;" src="plot1.png" ></a>
 
 
 <div id="wmu">
@@ -117,6 +119,8 @@ Final Angular Momentum: 0.8729084338063045<br>
 Average Angular Momentum: -1.0379800408213296<br>
 </p>
 <a href="wmu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu4.png" ></a>
+<h4>Change in Angular Momentum:</h4>
+<a href="plot2.png" > <img style="margin:0px auto;display:block;width:600px;" src="plot2.png" ></a>
 
 
 
@@ -165,6 +169,8 @@ Final Angular Momentum: -4.415695771561229<br>
 Average Angular Momentum: 2.6015201983173624<br>
 </p>
 <a href="amp4.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp4.png" ></a>
+<h4>Change in Angular Momentum:</h4>
+<a href="plot3.png" > <img style="margin:0px auto;display:block;width:600px;" src="plot3.png" ></a>
 
 
 
@@ -214,6 +220,8 @@ Final Angular Momentum: -4.240073606444323<br>
 Average Angular Momentum: -0.3869276931644715<br>
 </p>
 <a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
+<h4>Change in Angular Momentum:</h4>
+<a href="plot4.png" > <img style="margin:0px auto;display:block;width:600px;" src="plot4.png" ></a>
 
 
 
