@@ -37,7 +37,6 @@ Average Angular Momentum: 0.5800752989128658<br>
 <a href="mu0.png" > <img style="margin:0px auto;display:block;width:600px;" src="mu0.png" ></a>
 mu = 0.2
 <p style="text-align:center;font-size:80%;" >
-java -classpath bin simulation/Simulation 0.2 0.2 0.5 13 0
 Initial Angular Momentum: 1.8165000000000002<br>
 Final Angular Momentum: -4.240073606444323<br>
 Average Angular Momentum: -0.3869276931644715<br>
@@ -79,45 +78,45 @@ Average Angular Momentum: -2.055621564987872<br>
 wmu = 0
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -5.329200688200184<br>
-Average Angular Momentum: -1.4204688418286706<br>
+Final Angular Momentum: 8.88546574107103<br>
+Average Angular Momentum: 5.426212771537266<br>
 </p>
 <a href="wmu0.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu0.png" ></a>
 wmu = 0.2
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: 1.9609167609707332<br>
-Average Angular Momentum: -2.055621564987872<br>
+Final Angular Momentum: -4.240073606444323<br>
+Average Angular Momentum: -0.3869276931644715<br>
 </p>
-<a href="wmu1.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu1.png" ></a>
+<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
 wmu = 0.4
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -3.537465049562623<br>
-Average Angular Momentum: -2.183250948370748<br>
+pythonFinal Angular Momentum: -2.3420373344703123<br>
+Average Angular Momentum: -0.8002175095029151<br>
 </p>
-<a href="wmu2.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu2.png" ></a>
+<a href="wmu1.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu1.png" ></a>
 wmu = 0.6
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -1.2822668671922113<br>
-Average Angular Momentum: -1.9615761602213135<br>
+Final Angular Momentum: -1.0290236564433852<br>
+Average Angular Momentum: -0.8603895162470843<br>
 </p>
-<a href="wmu3.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu3.png" ></a>
+<a href="wmu2.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu2.png" ></a>
 wmu = 0.8
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -0.5158517065661707<br>
-Average Angular Momentum: -2.2246446957179224<br>
+Final Angular Momentum: -4.632233355994766<br>
+Average Angular Momentum: -0.8528599368928911<br>
 </p>
-<a href="wmu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu4.png" ></a>
+<a href="wmu3.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu3.png" ></a>
 wmu = 1.0
 <p style="text-align:center;font-size:80%;" >
 Initial Angular Momentum: 1.8165000000000002<br>
-Final Angular Momentum: -2.5362909438308616<br>
-Average Angular Momentum: -2.177460321892875<br>
+Final Angular Momentum: 0.8729084338063045<br>
+Average Angular Momentum: -1.0379800408213296<br>
 </p>
-<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
+<a href="wmu4.png" > <img style="margin:0px auto;display:block;width:600px;" src="wmu4.png" ></a>
 
 
 
