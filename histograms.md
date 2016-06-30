@@ -123,7 +123,48 @@ Average Angular Momentum: -1.0379800408213296<br>
 <div id="amp">
 <h3>Varying Boundary Amplitude</h3>
 </div>
-Foo
+amp = 0.25
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -1.1704383012292703<br>
+Average Angular Momentum: -0.8843229448672488<br>
+</p>
+<a href="amp0.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp0.png" ></a>
+amp = 0.5
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -4.240073606444323<br>
+Average Angular Momentum: -0.3869276931644715<br>
+</p>
+<a href="defaulthist.png" > <img style="margin:0px auto;display:block;width:600px;" src="defaulthist.png" ></a>
+amp = 0.75
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: 8.037128656496044<br>
+Average Angular Momentum: 0.8235660913250102<br>
+</p>
+<a href="amp1.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp1.png" ></a>
+amp = 1
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: 4.17893697511071<br>
+Average Angular Momentum: 1.3765178220705807<br>
+</p>
+<a href="amp2.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp2.png" ></a>
+amp = 1.25
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: 1.2163548921263176<br>
+Average Angular Momentum: 2.3676806608775807<br>
+</p>
+<a href="amp3.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp3.png" ></a>
+mu = 1.5
+<p style="text-align:center;font-size:80%;" >
+Initial Angular Momentum: 1.8165000000000002<br>
+Final Angular Momentum: -4.415695771561229<br>
+Average Angular Momentum: 2.6015201983173624<br>
+</p>
+<a href="amp4.png" > <img style="margin:0px auto;display:block;width:600px;" src="amp4.png" ></a>
 
 
 
