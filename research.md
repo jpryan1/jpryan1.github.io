@@ -11,7 +11,7 @@ pubs:
       year:    "(2016)"
       url:     "http://drops.dagstuhl.de/opus/frontdoor.php?source_opus=5960"
       doi:     ""
-      image:   "/robpic.png"
+      image:   "/images/robpic.png"
       media:
         - name: "Demo"
           url:  "https://www.youtube.com/watch?v=YYbzUEXy2Sk&feature=youtu.be"
@@ -21,9 +21,9 @@ pubs:
       journal: "Geombinatorics"
       note:    ""
       year:    "(2016)"
-      url:     "/color.pdf"
+      url:     "/documents/color.pdf"
       doi:     ""
-      image:   "/graph.png"
+      image:   "/images/graph.png"
 
     - title:   "Theoretical Friends of Finite Proximity"
       author:  "Edna Jones and John Paul Ryan"
@@ -32,7 +32,7 @@ pubs:
       year:    "(2015)"
       url:     "http://ijmcs.future-in-tech.net/10.2/R-Jones-Ryan.pdf"
       doi:     ""
-      image:   "/math.png"
+      image:   "/images/math.png"
 
    
 ---
