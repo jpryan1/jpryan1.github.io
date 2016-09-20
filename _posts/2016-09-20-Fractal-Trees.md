@@ -25,7 +25,7 @@ drawSubTree( depth )
  </pre>
 Indeed, this "assignment" was moreso a reason for us to submit a writeup in class and verify our attendance. In any event, there was an optional task that involved actually implementing this algorithm in JavaScript to draw a tree on a webpage via the "canvas" HTML element. How fun!
 
-To make the task even easier, the instructors provided a "CodePen" page. What is CodePen? I asked myself this when first perusing the assignment, and have since learned that it is a super cool website by which users may write and edit HTML, CSS, and JavaScript code, and see the results in real-time. I wouldn't call the concept revolutionary, but it's very well implemented - check it out [here](https://codepen.io).
+To make the task even easier, the instructors provided a "CodePen" page. What is CodePen? I asked myself this when first perusing the assignment, and have since learned that it is a super cool website by which users may write and edit HTML, CSS, and JavaScript code, and see the results in real-time. I wouldn't call the concept revolutionary, but it's very well implemented - check it out [here](https://codepen.io), and [here](http://codepen.io/keenancrane/pen/zKqbpb) is the environment for the fractal tree assignment.
 
 After struggling with the order of transformations for longer than I'd like to admit, I wrote some working code, and came up with the following Fractal Tree. How cool!
 <figure>
