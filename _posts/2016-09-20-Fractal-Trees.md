@@ -28,4 +28,4 @@ Indeed, this "assignment" was moreso a reason for us to submit a writeup in clas
 To make the task even easier, the instructors provided a "CodePen" page. What is CodePen? I asked myself this when first perusing the assignment, and have since learned that it is a super cool website by which users may write and edit HTML, CSS, and JavaScript code, and see the results in real-time. I wouldn't call the concept revolutionary, but it's very well implemented - check it out [here](https://codepen.io).
 
 After struggling with the order of transformations for longer than I'd like to admit, I wrote some working code, and came up with the following Fractal Tree. How cool!
-<img src="/images/tree.png" />
+<img style="margin:0px auto;display:block;width:600px;" src="/images/tree.png" />
