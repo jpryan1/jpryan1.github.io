@@ -2,3 +2,38 @@
 layout: post
 title: "Summary"
 ---
+
+
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/angvel_vs_n_mu.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/angvel_vs_n_wmu.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/radius.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/diffplot.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/theta_plot.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/compare.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+<figure>
+<img style="margin:0px auto;display:block;width:600px;" src="/images/ForWriteup/density.png" />
+<figcaption style="text-align:center" >It almost looks like electricity!</figcaption>
+</figure>
+
+
+
