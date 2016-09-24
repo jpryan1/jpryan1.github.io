@@ -55,7 +55,7 @@ permalink: /blog/
  var canvas = document.getElementById('myCanvas');
  var context = canvas.getContext('2d');
  
- context.translate(400,700);
+ context.translate(400,500);
  
  drawSubTree( context, 15,img );</script>
 
