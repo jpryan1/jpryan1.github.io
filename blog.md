@@ -17,7 +17,7 @@ permalink: /blog/
   </li>
 {% endfor %}
 </ul>
-<img src="/images/rich.jpg" />
+<img id="scream" src="/images/rich.png" />
 <canvas style="background-color:rgb(49, 82, 128)" id="myCanvas" width="800" height="800"></canvas>
 
 <script>function drawSubTree( ctx, depth, img )
