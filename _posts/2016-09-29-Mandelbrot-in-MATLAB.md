@@ -4,7 +4,7 @@ title: "Mandelbrot in MATLAB"
 ---
 
 <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    src="/MathJax/MathJax.js">
 </script>
 
 Along the same vein as my last blog post, I decided to see how few lines of code it would take to come up with some cool Mandelbrot pictures.
