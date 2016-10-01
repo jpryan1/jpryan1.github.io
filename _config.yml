@@ -14,7 +14,7 @@ author:
     scholar:
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 
 # Settings for analytics helper
