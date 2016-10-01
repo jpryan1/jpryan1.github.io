@@ -20,8 +20,10 @@ What exactly is going on in the above image? To answer this, we very briefly dis
 <h3> What is the Mandelbrot Set</h3>
 
 We begin by picking a complex number \\(c\\); let's say \\(c=-1\\). Now we generate a sequence of numbers based on the following rules:
+
 * The first number is \\(0\\)
 * If the \\(n\\)th number is \\(z\\), then the \\((n+1)\\)th number is \\(z^2+1\\). 
+
 In our example, the second number would be \\(0^2+(-1)=-1\\), then the third number would be \\((-1)^2+(-1)=0\\), and so on. The <em> Mandelbrot Set </em> is every complex number \\(c\\) such that, when you follow the rules above to create a sequence based on \\(c\\), every number in the sequence has magnitude less than 2. Our example, \\(c=-1\\), generated the sequence \\(0,-1,0,-1,0,-1,...\\), so \\(-1\\) is certainly in the Mandelbrot set. However, if we chose \\(c=1\\), then the generated sequence would be \\(0,1,2,5,26,...\\), so \\(1\\) is <em>not</em> in the Mandelbrot set. 
 
 With this definition in mind, we can visualize the Mandelbrot Set by painting it on the complex plane - if a complex number is in the set, we paint it white, otherwise we paint it white. That process gives us this image:
@@ -29,7 +31,7 @@ With this definition in mind, we can visualize the Mandelbrot Set by painting it
 <a href="/images/mand/bin.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/mand/bin.png" />
 </a>
-<figcaption style="text-align:center" >Generated in MATLAB.</figcaption>
+<figcaption style="text-align:center" >White = Mandelbrot Set</figcaption>
 </figure>
 But wait, how can we tell for sure whether a complex number will generate a sequence that hits a number greater than \\(2\\)? After all, we can't check the whole infinite sequence! In my program, I check only the first \\(10,000\\) numbers in the sequence; the error from this approximation is very small, and imperceptible in the image. 
 
