@@ -46,7 +46,7 @@ The program I wrote is only about 75 lines of MATLAB [(available here)](https://
 </a>
 <figcaption style="text-align:center" >Julia set for c=-0.79+0.15i. Pretty colors ^_^ </figcaption>
 </figure>
-Zooming in too far will make things bad because of floating point imprecision (this is fixable, an exercise left for the reader!), but before that error kicks in, we can explore quite a bit, and begin to see the self-similarity. If you're looking for a cover for your next album, this is the program for you!
+Zooming in too far will make things bad because of floating point imprecision (this is fixable, and there is a <em>lot</em> of discussion about this on the Wiki page), but before that error kicks in, we can explore quite a bit, and begin to see the self-similarity. If you're looking for a cover for your next album, this is the program for you!
 <figure>
 <a href="/images/mand/zoom.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/mand/zoom.png" />
