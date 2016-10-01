@@ -39,12 +39,12 @@ With this in mind, it's time to make the picture more colorful! Remember that th
 
 <h3> The MATLAB implementation </h3>
 
-The program I wrote is only about 75 lines of MATLAB [(available here)](https://github.com/jpryan1/mandelbrot), and allows the user to zoom into the image, toggle the colormap, and switch between viewing the Mandelbrot set and the Julia set.
+The program I wrote is only about 75 lines of MATLAB [(available here)](https://github.com/jpryan1/mandelbrot), and allows the user to zoom into the image, toggle the colormap, and switch between viewing the Mandelbrot set and a [Julia set](https://en.wikipedia.org/wiki/Julia_set).
 <figure>
 <a href="/images/mand/julia.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/mand/julia.png" />
 </a>
-<figcaption style="text-align:center" >Julia Set for \\(c=-0.79+0.15i\\). Pretty colors ^_^ </figcaption>
+<figcaption style="text-align:center" >Julia set for c=-0.79+0.15i. Pretty colors ^_^ </figcaption>
 </figure>
 Zooming in too far will make things bad because of floating point imprecision (this is fixable, an exercise left for the reader!), but before that error kicks in, we can explore quite a bit, and begin to see the self-similarity. If you're looking for a cover for your next album, this is the program for you!
 <figure>
@@ -59,4 +59,27 @@ Zooming in too far will make things bad because of floating point imprecision (t
 <img style="margin:0px auto;display:block;width:600px;" src="/images/mand/julia_zoom.png" />
 </a>
 <figcaption style="text-align:center" >Spirals of Rock - Julia and the Divergences</figcaption>
+</figure>
+This toy project began as a way to learn MATLAB, and in doing it, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
+<figure>
+<a href="/images/mand/summer.png">
+<img style="margin:0px auto;display:block;width:600px;" src="/images/mand/summer.png" />
+</a>
+<figcaption style="text-align:center" >Summer</figcaption>
+</figure>
+<figure>
+<a href="/images/mand/autumn.png">
+<img style="margin:0px auto;display:block;width:600px;" src="/images/mand/autumn.png" />
+</a>
+<figcaption style="text-align:center" >Autumn</figcaption>
+</figure><figure>
+<a href="/images/mand/winter.png">
+<img style="margin:0px auto;display:block;width:600px;" src="/images/mand/winter.png" />
+</a>
+<figcaption style="text-align:center" >Winter</figcaption>
+</figure><figure>
+<a href="/images/mand/spring.png">
+<img style="margin:0px auto;display:block;width:600px;" src="/images/mand/spring.png" />
+</a>
+<figcaption style="text-align:center" >Spring</figcaption>
 </figure>
