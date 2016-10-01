@@ -17,7 +17,7 @@ The Mandelbrot Set is a set of numbers described by a very simple mathematical s
 <figcaption style="text-align:center" >Generated in MATLAB.</figcaption>
 </figure>
 What exactly is going on in the above image? To answer this, we very briefly discuss what <em>is</em> the Mandelbrot Set. If you're already familiar or don't care to see the math, skip this section. 
-<h3> What is the Mandelbrot Set</h3>
+<h3> What is the Mandelbrot Set?</h3>
 
 We begin by picking a complex number \\(c\\); let's say \\(c=-1\\). Now we generate a sequence of numbers based on the following rules:
 
