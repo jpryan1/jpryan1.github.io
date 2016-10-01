@@ -4,7 +4,7 @@ title: "Mandelbrot in MATLAB"
 ---
 
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="MathJax/MathJax.js">
 </script>
 
 <script type="text/x-mathjax-config">
