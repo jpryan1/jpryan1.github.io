@@ -60,7 +60,7 @@ Zooming in too far will make things bad because of floating point imprecision (t
 </a>
 <figcaption style="text-align:center" >Spirals of Rock - Julia and the Divergences</figcaption>
 </figure>
-This toy project began as a way to learn MATLAB, and in doing it, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
+This toy project began as a way to learn MATLAB, and in doing so, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
 <figure>
 <a href="/images/mand/summer.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/mand/summer.png" />
@@ -83,3 +83,4 @@ This toy project began as a way to learn MATLAB, and in doing it, I also learned
 </a>
 <figcaption style="text-align:center" >Spring</figcaption>
 </figure>
+The code can be improved in many ways - feel free to download and play with it, and find a cool desktop background in the dizzying beauty of fractal mathscapes! 
