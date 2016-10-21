@@ -22,7 +22,7 @@ title: "Summary"
 <img style="margin:0px auto;display:inline;width:500px;" src="/images/ForWriteup/radius.png" />
 </figure>
 <figure>
-<img style="margin:0px auto;display:inline;width:500px;" src="/images/ForWriteup/diffplot.png" />
+<img style="margin:0px auto;display:inline;width:500px;" src="/images/ForWriteup/error.png" />
 <figcaption style="text-align:center" >As N increases, the toy model is more accurate in predicting the angular velocity.</figcaption>
 </figure>
 
