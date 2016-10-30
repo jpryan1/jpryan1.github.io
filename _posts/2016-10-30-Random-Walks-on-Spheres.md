@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mandelbrot in MATLAB"
+title: "Random Walks on Spheres"
 ---
 
 <script type="text/javascript"
