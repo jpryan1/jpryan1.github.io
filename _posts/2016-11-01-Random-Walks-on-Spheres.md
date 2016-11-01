@@ -41,7 +41,7 @@ Lorem Ipsum Dolor
 
 <figure>
 <a href="/images/kak/letter.png">
-<img style="margin:0px auto;display:block;width:600px;" src="/images/kak/letter.pngg" />
+<img style="margin:0px auto;display:block;width:600px;" src="/images/kak/letter.png" />
 </a>
 <figcaption style="text-align:center" >Generated in MATLAB.</figcaption>
 </figure>
