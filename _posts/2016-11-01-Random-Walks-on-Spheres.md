@@ -20,7 +20,7 @@ Lorem Ipsum Dolor
 <a href="/images/kak/square2.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/kak/square2.png" />
 </a>
-<figcaption style="text-align:center" >\\(f(x)=1\\) on the left and right walls, \\(f(x)=0\\) on the other walls.</figcaption>
+<figcaption style="text-align:center" >\(f(x)=1\) on the left and right walls, \\(f(x)=0\\) on the other walls.</figcaption>
 </figure>
 
 <figure>
