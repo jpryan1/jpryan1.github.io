@@ -14,7 +14,7 @@ Lorem Ipsum Dolor
 <img style="margin:0px auto;display:block;width:600px;" src="/images/kak/square1.png" />
 </a></figure>
 
-\\(f(x)=1\\) on the left wall, \\(f(x)=0\\) on the other walls. 
+\(f(x)=1\) on the left wall, \\(f(x)=0\\) on the other walls. 
 
 <figure>
 <a href="/images/kak/square2.png">
