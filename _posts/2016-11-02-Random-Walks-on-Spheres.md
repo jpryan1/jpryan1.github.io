@@ -23,7 +23,19 @@ where \\(\alpha\\) is the thermal diffusivity of the material (heat spreads diff
 
 What are our conditions? Firstly, \\(u(x,t)=100\\) on the left wall of the plate, and \\(u(x,t)=70\\) on every other wall (we are keeping the temperatures of the walls constant). Also, \\(u(x,0)=70\\) everywhere on the plate *except* the left wall; this is to say that at the instant the wall is switched to 100 degrees, the rest of the plate hasn't changed from its initial temperature of 70 degrees.
 
-The point is, we can use the heat equation to solve for \\(u(x,t)\\), and that's really nice. However, that's a lot of math, so let's let the physics undergrads work on that and I'll get to my point. Once we switch the left wall to 100 degrees, the heat will spread throughout the plate. After enough time, the plate will reach a steady state again, wherein the temperature of each point stops changing. If it isn't clear that a steady state will be achieved, imagine leaving a hot cup of coffee on a table. After a minute, the coffee has cooled a bit. After 2 hours, its practically room temperature. After a day, it is room temperature. After a week, it is still room temperature - it has achieved a steady state. 
+The point is, we can use the heat equation to solve for \\(u(x,t)\\), and that's really nice. However, that's a lot of math, so let's let the physics undergrads work on that and I'll get to my point. 
+
+Once we switch the left wall to 100 degrees, the heat will spread throughout the plate. After enough time, the plate will reach a steady state again, wherein the temperature of each point stops changing. If it isn't clear that a steady state should be achieved, imagine leaving a hot cup of coffee on a table. After a minute, the coffee has cooled a bit. After 2 hours, its practically room temperature. After a day, it is room temperature. After a week, it is still room temperature - it has achieved a steady state. 
+
+Suppose I want a formula that describes the temperature *at steady state* at a point in the plate. Looking again at the heat equation, we realize that, at steady state, we will have 
+
+\\(\frac{\partial u}{\partial t} = 0\\)
+
+Which is to say that the temperature at any point doesn't change with time. Then we have a new PDE, called *Laplace's Equation*:
+
+\\(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0\\)
+
+
 <figure>
 <a href="/images/kak/square1.png">
 <img style="margin:0px auto;display:block;width:600px;" src="/images/kak/square1.png" />
