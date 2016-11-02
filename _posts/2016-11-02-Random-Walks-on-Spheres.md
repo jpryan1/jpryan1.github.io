@@ -13,10 +13,13 @@ Suppose I have a square, metal plate. Suppose also that I can control the temper
 
 Mathematically, we're looking for a function \\(u(x,t)\\) which describes the temperature at the 2D point \\(x\\) at time \\(t\\). For example, if \\(c\\) is the point in the middle of the plate, then we know that \\(u(c,0)=70\\), by the statement of the problem (the center of the plate was initially 70 degrees). So how do we find this function, \\(u(x,t)\\)?
 
-(I am assuming that the plate's temperature is only affected by the flat irons, and not by the air. The point is that we're working with a 2D problem). 
-
 The answer is that we solve the *heat equation*, using our initial and boundary conditions. This is the heat equation:
-\\(\[\frac{\partial u}{\partial t} = \alpha \nabla^2 u\]\\)
+
+\\(\frac{\partial u}{\partial t} = \alpha \nabla^2 u\\)
+
+where \\(\alpha\\) is the thermal diffusivity of the material (heat spreads differently through different materials, hence the existence of Thermos). Let's say our plate has thermal diffusivity 1, and note that this is roughly a 2D problem (assuming the air around the plate doesn't affect its temperature too much). Then the heat equation looks like this:
+
+\\(\frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}\\)
 
 What are our conditions? Firstly, \\(u(x,t)=100\\) on the left wall of the plate, and \\(u(x,t)=70\\) on every other wall (we are keeping the temperatures of the walls constant). Also, \\(u(x,0)=70\\) everywhere on the plate *except* the left wall; this is to say that at the instant the wall is switched to 100 degrees, the rest of the plate hasn't changed from its initial temperature of 70 degrees.
 
