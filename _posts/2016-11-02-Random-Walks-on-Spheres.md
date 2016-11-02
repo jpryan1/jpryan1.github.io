@@ -7,7 +7,9 @@ title: "Random Walks on Spheres"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-Lorem Ipsum Dolor
+Consider the following question...
+<img style="margin:0px auto;display:block;width:300px;" src="/images/kak/consider.jpg" />
+
 
 <figure>
 <a href="/images/kak/square1.png">
