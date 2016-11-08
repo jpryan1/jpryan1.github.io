@@ -16,7 +16,7 @@ The Mandelbrot Set is a set of numbers described by a very simple mathematical s
 <a href="/images/mand/mand.png">
 <img style="width:400px;" src="/images/mand/mand.png" />
 </a>
-<figcaption style="text-align:center" >Generated in MATLAB.</figcaption>
+<figcaption>Generated in MATLAB.</figcaption>
 </figure>
 </div>
 What exactly is going on in the above image? To answer this, we very briefly discuss what <em>is</em> the Mandelbrot Set. If you're already familiar or don't care to see the math, skip this section. 
@@ -35,7 +35,7 @@ With this definition in mind, we can visualize the Mandelbrot Set by painting it
 <a href="/images/mand/bin.png">
 <img style="width:400px;" src="/images/mand/bin.png" />
 </a>
-<figcaption style="text-align:center" >White = Mandelbrot Set</figcaption>
+<figcaption >White = Mandelbrot Set</figcaption>
 </figure>
 </div>
 But wait, how can we tell for sure whether a complex number will generate a sequence that hits a number greater than \\(2\\)? After all, we can't check the whole infinite sequence! In my program, I check only the first \\(10,000\\) numbers in the sequence; the error from this approximation is very small, and imperceptible in the image. 
@@ -51,7 +51,7 @@ The program I wrote is only about 75 lines of MATLAB [(available here)](https://
 <a href="/images/mand/julia.png">
 <img style="width:400px;" src="/images/mand/julia.png" />
 </a>
-<figcaption style="text-align:center" >Julia set for c=-0.79+0.15i. Pretty colors ^_^ </figcaption>
+<figcaption>Julia set for c=-0.79+0.15i. Pretty colors ^_^ </figcaption>
 </figure>
 </div>
 Zooming in too far will make things bad because of floating point imprecision (this is fixable, and there is a <em>lot</em> of discussion about this on the Wiki page), but before that error kicks in, we can explore quite a bit, and begin to see the self-similarity. If you're looking for a cover for your next album, this is the program for you!
@@ -61,7 +61,7 @@ Zooming in too far will make things bad because of floating point imprecision (t
 <a href="/images/mand/zoom.png">
 <img style="width:400px;" src="/images/mand/zoom.png" />
 </a>
-<figcaption style="text-align:center" >This is actually known as "Seahorse Valley". Can you find it in the picture at the top of this page?</figcaption>
+<figcaption>This is actually known as "Seahorse Valley". Can you find it in the picture at the top of this page?</figcaption>
 </figure>
 </div>
 <div style="text-align:center;" >
@@ -69,7 +69,7 @@ Zooming in too far will make things bad because of floating point imprecision (t
 <a href="/images/mand/julia_zoom.png">
 <img style="width:400px;" src="/images/mand/julia_zoom.png" />
 </a>
-<figcaption style="text-align:center" >Spirals of Rock - Julia and the Divergences</figcaption>
+<figcaption>Spirals of Rock - Julia and the Divergences</figcaption>
 </figure>
 </div>
 This toy project began as a way to learn MATLAB, and in doing so, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
@@ -78,32 +78,25 @@ This toy project began as a way to learn MATLAB, and in doing so, I also learned
 <a href="/images/mand/summer.png">
 <img style="width:400px;" src="/images/mand/summer.png" />
 </a>
-<figcaption style="text-align:center" >Summer</figcaption>
+<figcaption>Summer</figcaption>
 </figure>
-</div>
-
-<div style="text-align:center;" >
 <figure>
 <a href="/images/mand/autumn.png">
 <img style="width:400px;" src="/images/mand/autumn.png" />
 </a>
-<figcaption style="text-align:center" >Autumn</figcaption>
+<figcaption>Autumn</figcaption>
 </figure>
-</div>
-
-<div style="text-align:center;" ><figure>
+<figure>
 <a href="/images/mand/winter.png">
 <img style="width:400px;" src="/images/mand/winter.png" />
 </a>
-<figcaption style="text-align:center" >Winter</figcaption>
+<figcaption>Winter</figcaption>
 </figure>
-</div>
-
-<div style="text-align:center;" ><figure>
+<figure>
 <a href="/images/mand/spring.png">
 <img style="width:400px;" src="/images/mand/spring.png" />
 </a>
-<figcaption style="text-align:center" >Spring</figcaption>
+<figcaption>Spring</figcaption>
 </figure>
 </div>
 The code can be improved in many ways - feel free to download and play with it, and find a cool desktop background in the dizzying beauty of fractal mathscapes! 
