@@ -74,25 +74,25 @@ Zooming in too far will make things bad because of floating point imprecision (t
 </div>
 This toy project began as a way to learn MATLAB, and in doing so, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
 <div style="text-align:center;" >
-<figure>
+<figure style="display:inline;">
 <a href="/images/mand/summer.png">
 <img style="width:400px;" src="/images/mand/summer.png" />
 </a>
 <figcaption>Summer</figcaption>
 </figure>
-<figure>
+<figure style="display:inline;">
 <a href="/images/mand/autumn.png">
 <img style="width:400px;" src="/images/mand/autumn.png" />
 </a>
 <figcaption>Autumn</figcaption>
 </figure>
-<figure>
+<figure style="display:inline;">
 <a href="/images/mand/winter.png">
 <img style="width:400px;" src="/images/mand/winter.png" />
 </a>
 <figcaption>Winter</figcaption>
 </figure>
-<figure>
+<figure style="display:inline;">
 <a href="/images/mand/spring.png">
 <img style="width:400px;" src="/images/mand/spring.png" />
 </a>
