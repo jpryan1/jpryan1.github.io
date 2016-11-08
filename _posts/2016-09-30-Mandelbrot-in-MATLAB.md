@@ -74,7 +74,7 @@ Zooming in too far will make things bad because of floating point imprecision (t
 </div>
 This toy project began as a way to learn MATLAB, and in doing so, I also learned about [colormaps](http://www.mathworks.com/help/matlab/ref/colormap.html). In the program, you can also toggle between 9 different colormaps. Here are the seasons!
 
-<table width="500" border="1" cellpadding="5">
+<table align="center">
 <tr>
 <td align="center" valign="center">
 <img src="/images/mand/summer.png" style="width:400px;" />
