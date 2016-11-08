@@ -76,57 +76,29 @@ This toy project began as a way to learn MATLAB, and in doing so, I also learned
 
 <table align="center">
 <tr>
-<td align="center" valign="center">
-<img src="/images/mand/summer.png" style="width:400px;" />
+<td align="center" valign="center"> <a href="/images/mand/summer.png" >
+<img src="/images/mand/summer.png" style="width:300px;" /> </a>
 <br />
 Summer
 </td>
-
-<td align="center" valign="center">
-<img src="/images/mand/autumn.png" style="width:400px;" />
+<td align="center" valign="center"> <a href="/images/mand/autumn.png" >
+<img src="/images/mand/autumn.png" style="width:300px;" /> </a>
 <br />
 Autumn
 </td>
 </tr>
 <tr>
-<td align="center" valign="center">
-<img src="/images/mand/winter.png" style="width:400px;"/>
+<td align="center" valign="center"> <a href="/images/mand/winter.png" >
+<img src="/images/mand/winter.png" style="width:300px;"/> </a>
 <br />
 Winter
 </td>
-<td align="center" valign="center">
-<img src="/images/mand/spring.png" style="width:400px;" />
+<td align="center" valign="center"> <a href="/images/mand/spring.png" >
+<img src="/images/mand/spring.png" style="width:300px;" /> </a>
 <br />
 Spring
 </td>
 </tr>
 </table>
 
-
-<div style="text-align:center;" >
-<figure style="display:inline;">
-<a href="/images/mand/summer.png">
-<img style="width:400px;" src="/images/mand/summer.png" />
-</a>
-<figcaption>Summer</figcaption>
-</figure>
-<figure style="display:inline;">
-<a href="/images/mand/autumn.png">
-<img style="width:400px;" src="/images/mand/autumn.png" />
-</a>
-<figcaption>Autumn</figcaption>
-</figure>
-<figure style="display:inline;">
-<a href="/images/mand/winter.png">
-<img style="width:400px;" src="/images/mand/winter.png" />
-</a>
-<figcaption>Winter</figcaption>
-</figure>
-<figure style="display:inline;">
-<a href="/images/mand/spring.png">
-<img style="width:400px;" src="/images/mand/spring.png" />
-</a>
-<figcaption>Spring</figcaption>
-</figure>
-</div>
 The code can be improved in many ways - feel free to download and play with it, and find a cool desktop background in the dizzying beauty of fractal mathscapes! 
