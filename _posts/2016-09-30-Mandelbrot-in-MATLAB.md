@@ -77,24 +77,24 @@ This toy project began as a way to learn MATLAB, and in doing so, I also learned
 <table align="center">
 <tr>
 <td align="center" valign="center"> <a href="/images/mand/summer.png" >
-<img src="/images/mand/summer.png" style="width:300px;" /> </a>
+<img src="/images/mand/summer.png" style="width:200px;" /> </a>
 <br />
 Summer
 </td>
 <td align="center" valign="center"> <a href="/images/mand/autumn.png" >
-<img src="/images/mand/autumn.png" style="width:300px;" /> </a>
+<img src="/images/mand/autumn.png" style="width:200px;" /> </a>
 <br />
 Autumn
 </td>
 </tr>
 <tr>
 <td align="center" valign="center"> <a href="/images/mand/winter.png" >
-<img src="/images/mand/winter.png" style="width:300px;"/> </a>
+<img src="/images/mand/winter.png" style="width:200px;"/> </a>
 <br />
 Winter
 </td>
 <td align="center" valign="center"> <a href="/images/mand/spring.png" >
-<img src="/images/mand/spring.png" style="width:300px;" /> </a>
+<img src="/images/mand/spring.png" style="width:200px;" /> </a>
 <br />
 Spring
 </td>
