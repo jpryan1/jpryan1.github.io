@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mandelbrot in MATLAB"
+category: Science/Programming
 ---
 
 <script type="text/javascript"
