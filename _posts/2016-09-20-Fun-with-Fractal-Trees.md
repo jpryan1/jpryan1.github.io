@@ -6,7 +6,7 @@ category: Science/Programming
 
 Earlier this week I was working on an assignment for my Computer Graphics course here at CMU. The task was to write pseudocode that would generate a fractal tree, and we were provided with the following structure:
 
-<pre> 
+{% highlight javascript %}
 drawSubTree( depth )
 {
    if( depth == 0 ) return;
@@ -23,7 +23,7 @@ drawSubTree( depth )
 
    // apply some transformations
  }
- </pre>
+{% endhighlight %}
 Indeed, this "assignment" was moreso a reason for us to submit a writeup in class and verify our attendance. In any event, there was an optional task that involved actually implementing this algorithm in JavaScript to draw a tree on a webpage via the "canvas" HTML element. How fun!
 
 To make the task even easier, the instructors provided a "CodePen" page. What is CodePen? I asked myself this when first perusing the assignment, and have since learned that it is a super cool website by which users may write and edit HTML, CSS, and JavaScript code, and see the results in real-time. I wouldn't call the concept revolutionary, but it's very well implemented - check it out [here](https://codepen.io), and [here](http://codepen.io/keenancrane/pen/zKqbpb) is the environment for the fractal tree assignment.
