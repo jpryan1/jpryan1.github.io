@@ -3,7 +3,13 @@ layout: post
 title: "playground"
 ---
 
-
+ <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/chess/pgnviewer/chessboardjs/css/chessboard-0.3.0.min.css" />
+<link rel="stylesheet" href="/chess/pgnviewer/stylesheets/style.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <div class="container">
       <div class="page-header">
         <h1>chessboardjs + chess.js pgn viewer</h1>
