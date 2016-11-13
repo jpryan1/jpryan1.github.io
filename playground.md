@@ -47,6 +47,6 @@ title: "playground"
         </div>
       </div>
     </div>
-    <script src="/chess/pgnviewer/chessboardjs/js/chessboard-0.3.0.min.js"></script>
-    <script src="/chess/pgnviewer/chessjs/chess.js"></script>
-    <script src="/chess/pgnviewerjs/pgnviewer.js"></script>
+<script src="/chess/pgnviewer/chessboardjs/js/chessboard-0.3.0.min.js"></script>
+<script src="/chess/pgnviewer/chessjs/chess.js"></script>
+<script src="/chess/pgnviewerjs/pgnviewer.js"></script>
