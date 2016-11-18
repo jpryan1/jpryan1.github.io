@@ -8,6 +8,18 @@ category: Science/Programming
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+To recap the conclusion of the last post, we are going to find the steady state temperature of a 2D plate with a certain boundary temperature. This is equivalent to finding \\(u(x,y)\\) that satisfies 
+
+\\(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0\\)
+
+and has the boundary condition \\(u(x,y)=f(x,y)\\) for \\((x,y)\\) on the boundary (where \\(f(x,y)\\) is some function that describes the temperature on the boundary). 
+
+We found that the solution, if it exists, can be written as 
+
+\\(u(x,y) = E^{(x,y)}[f(W_\tau)]\\)
+
+which, in English, is the expected value of the temperature of the boundary at the hitting spot of a Wiener process that started at \\((x,y)\\). 
+
 
 <!--
  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
