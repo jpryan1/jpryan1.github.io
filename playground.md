@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "playground"
+title: "Heat, Laplace's Equation and Random Walks on Spheres (Part 2 - the algorithm)"
+category: Science/Programming
 ---
 
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!--
  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
@@ -56,3 +63,4 @@ title: "playground"
 <script src="/chess/pgnviewer/chessboardjs/js/chessboard-0.3.0.min.js"></script>
 <script src="/chess/pgnviewer/chessjs/chess.js"></script>
 <script src="/chess/pgnviewerjs/pgnviewer.js"></script>
+-->
