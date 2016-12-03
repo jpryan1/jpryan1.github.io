@@ -7,7 +7,7 @@ permalink: /proposal/
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-##Scotty3D Visualization of Quantum Wave Functions
+## Scotty3D Visualization of Quantum Wave Functions
 
 The goal of this project is to develop a meaningful and informative visualization of one dimensional wave functions and how they evolve in time in various potentials. 
 
