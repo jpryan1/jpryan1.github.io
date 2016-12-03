@@ -15,20 +15,17 @@ The implementation of this visualization will largely be informed by our class d
 
 \\(i\hbar \frac{\partial }{\partial t} \Psi(x,t) = \left( \frac{-\hbar^2}{2m}\nabla^2 + V(x,t)\right) \Psi(x,t)\\)
 
-and its numerical integration will be performed as outlined in [this paper](http://www.scielo.org.mx/pdf/rmfe/v54n2/v54n2a3.pdf). 
+and its numerical integration can be performed as outlined in [this paper](http://www.scielo.org.mx/pdf/rmfe/v54n2/v54n2a3.pdf). 
 
-Here is an example of a visualization of a 1D quantum wave function. Notice that the animation gives information about the function's amplitude 
+Here is an example of a visualization of a 1D quantum wave function. Notice especially the solid green function that appears at around the 2:00 mark.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/imdFhDbWDyM" frameborder="0" allowfullscreen></iframe>
 
-Here is a gif which was created for some completely different reason, but does a good job of illustrating my hope for this visualization:
+The solid green function is the amplitude of the wave function, or the probability that the particle will be observed at a given \\(x\\). The goal of my implementation will be to display this amplitude with a mesh structure, such as in the following gif. 
 
 <img src="/images/wave.gif" />
 
+(Note: I just found this gif on Google, it was created for some other purpose.) 
 
-
-
-
-
-
+To make things simple, the potential \\(V(x,t)\\) will be time-independent and piecewise linear. Examples of fun potentials for me to try include wells, steps, and walls (for example, to illustrate quantum tunneling). The visualization of the potential isn't important, but one idea I have is to display the potential along the x-axis as a semi-transparent surface of revolution. This idea is inspired by the usage in Assignment 4 of a semi-transparent container around the joints to display the threshold for linear blend skinning. 
 
