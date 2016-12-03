@@ -4,4 +4,19 @@ title: Project Proposal
 permalink: /proposal/
 ---
 
-Lorem Ipsum Dolor
+##Scotty3D Visualization of Quantum Wave Functions
+
+The goal of this project is to develop a meaningful and informative visualization of one dimensional wave functions and how they evolve in time in various potentials. 
+
+The implementation of this visualization will largely be informed by our class discussion on solving discretized PDE's with numerical methods, and updating a mesh accordingly. The PDE at play is the Schrodinger equation 
+
+
+Here is an example of a visualization of a 1D quantum wave function. Notice that the animation gives information about the function's amplitude 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/imdFhDbWDyM" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+
