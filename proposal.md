@@ -13,12 +13,19 @@ The goal of this project is to develop a meaningful and informative visualizatio
 
 The implementation of this visualization will largely be informed by our class discussion on solving discretized PDE's with numerical methods, and updating a mesh accordingly. The PDE at play is the 1D time-dependent Schrodinger equation 
 
-\\(i\hbar \frac{\partial d}{\partial dt} \Psi(x,t) = \left( \frac{-\hbar^2}{2m}\nabla^2 + V(x,t))\right) \Psi(x,t)\\)
+\\(i\hbar \frac{\partial }{\partial t} \Psi(x,t) = \left( \frac{-\hbar^2}{2m}\nabla^2 + V(x,t)\right) \Psi(x,t)\\)
 
+and its numerical integration will be performed as outlined in [this paper](http://www.scielo.org.mx/pdf/rmfe/v54n2/v54n2a3.pdf). 
 
 Here is an example of a visualization of a 1D quantum wave function. Notice that the animation gives information about the function's amplitude 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/imdFhDbWDyM" frameborder="0" allowfullscreen></iframe>
+
+Here is a gif which was created for some completely different reason, but does a good job of illustrating my hope for this visualization:
+
+<img src="/images/wave.gif" />
+
+
 
 
 
