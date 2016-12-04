@@ -31,7 +31,7 @@ To make things simple, the potential \\(V(x,t)\\) will be time-independent and p
 
 Here is a to-do list which I could follow for this project:
 
-*1) Build a cylinder mesh with small distance between the vertices.
+<em>1) Build a cylinder mesh with small distance between the vertices.
 
 2) Modify the Scotty3D code to update the amplitude of each vertex in the mesh according to the value of the wave function (which has yet to be calculated). 
 
@@ -45,6 +45,6 @@ Here is a to-do list which I could follow for this project:
 
 7) Write code so that the user can press a button and the wave function will collapse and the particle will be observed (perhaps as a sphere) (optional)
 
-8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). (optional).* 
-
+8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). (optional). 
+</em>
 Lorem Ipsum Dolor
