@@ -35,15 +35,16 @@ _1) Build a cylinder mesh with small distance between the vertices._
 
 _2) Modify the Scotty3D code to update the amplitude of each vertex in the mesh according to the value of the wave function (which has yet to be calculated)._
 
-_3) Write code based on the (relatively simple) techniques from the above paper to numerically integrate the Schrodinger equation for a simple potential with simple boundary conditions. Have the code written in step 2) access the solution to this integration. _
+_3) Write code based on the (relatively simple) techniques from the above paper to numerically integrate the Schrodinger equation for a simple potential with simple boundary conditions. Have the code written in step 2) access the solution to this integration._
 
-_4) Check the numerical accuracy and stability of this code against an analytical solution before proceeding. Modify discretizations and perhaps numerical integration sceheme (use higher order RK, for example) as necesessary. _
+_4) Check the numerical accuracy and stability of this code against an analytical solution before proceeding. Modify discretizations and perhaps numerical integration sceheme (use higher order RK, for example) as necesessary._
 
-_5) Run a demo of quantum tunneling. _
+_5) Run a demo of quantum tunneling._
  
 _6) Include the actual value of the wave function in the visualization (including phase information), perhaps by coloring squares of the mesh, or some other method (optional)._
 
 _7) Write code so that the user can press a button and the wave function will collapse and the particle will be observed (perhaps as a sphere) (optional)_
 
-_8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). (optional). _
+_8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). (optional)._
+
 Lorem Ipsum Dolor
