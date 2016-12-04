@@ -45,6 +45,6 @@ _6) Include the actual value of the wave function in the visualization (includin
 
 _7) Write code so that the user can press a button and the wave function will collapse and the particle will be observed (perhaps as a sphere) (optional)_
 
-_8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). (optional)._
+_8) Implement any or all of the above for the 2D equation. The phase information can be ditched (or displayed in another fashion, like color), and the wave function represented by a surface in_ \\(R^3\\): \\(f(x,y) = |\Psi(x,y,t)|\\). _(optional)._
 
 Lorem Ipsum Dolor
