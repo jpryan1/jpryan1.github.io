@@ -6,7 +6,7 @@ layout: default
 Hello
 
 <div class="parent">
-<img class="board" src="/images/chess/board.jpg"  />
+<img class="board" src="/images/chess/board.png"  />
 <img class="BR" src="/images/chess/BR.png" />
 </div>
 
