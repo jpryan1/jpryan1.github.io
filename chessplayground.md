@@ -13,12 +13,12 @@ Hello
 <img class="BQ" src="/images/chess/BQ.png" />
 <img class="BK" src="/images/chess/BK.png" />
 <img class="BP" src="/images/chess/BP.png" />
-<img class="WR" src="/images/chess/BR.png" />
-<img class="WN" src="/images/chess/BN.png" />
-<img class="WB" src="/images/chess/BB.png" />
-<img class="WQ" src="/images/chess/BQ.png" />
-<img class="WK" src="/images/chess/BK.png" />
-<img class="WP" src="/images/chess/BP.png" />
+<img class="WR" src="/images/chess/WR.png" />
+<img class="WN" src="/images/chess/WN.png" />
+<img class="WB" src="/images/chess/WB.png" />
+<img class="WQ" src="/images/chess/WQ.png" />
+<img class="WK" src="/images/chess/WK.png" />
+<img class="WP" src="/images/chess/WP.png" />
 </div>
 
 
