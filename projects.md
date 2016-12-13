@@ -9,7 +9,7 @@ pubs:
       image:   "/images/pic.png"
       media:
         - name: "Demo"
-          url:  "https://www.youtube.com/watch?v=nCTWe_epuL8"
+          url:  "https://youtu.be/AdOeYogRBKk"
         - name: "Source"
           url: "https://github.com/jpryan1/swirling-disks"
           
