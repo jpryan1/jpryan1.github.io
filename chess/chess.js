@@ -3,9 +3,11 @@
 window.onload = function () { 
 
   var BK = new Object();
-  BK.im = document.getElementById("BK");
+  var BKe = document.getElementById("BK");
+  BK.im = BKe;
   var BQ = new Object();
-  BQ.im = document.getElementById("BQ");
+  var BQe = document.getElementById("BQ");
+  BQ.im = BQe;
   BQ.im.style.top = 10+'px';
   BQ.im.style.left = 16+'px';
  
