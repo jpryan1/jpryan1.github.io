@@ -80,10 +80,18 @@ window.onload = function () {
   blacks = [BK, BQ, BR1, BR2, BN1, BN2, BB1, BB2, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
   
   for(piece of whites){
-    piece.setSquare = setSquare; 
+    piece.setSquare =  function(row, col){
+                          this.top = (15+row*25)+'px';
+                          this.left = (15+col*25)+'px';
+                        }
+  
   }
   for(piece of blacks){
-    piece.setSquare = setSquare; 
+    piece.setSquare =  function(row, col){
+                          this.top = (15+row*25)+'px';
+                          this.left = (15+col*25)+'px';
+                        }
+   
   }
   
   BQ.setSquare(2,2);
@@ -91,7 +99,7 @@ window.onload = function () {
 }
 
 
-function setSquare(row, col){
+function setSquarefunction(row, col){
   this.top = (15+row*25)+'px';
   this.left = (15+col*25)+'px';
 }
