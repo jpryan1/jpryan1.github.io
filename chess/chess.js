@@ -6,11 +6,8 @@ window.onload = function () {
   BK.element = document.getElementById("BK");
   var BQ = new Object();
   BQ.element = document.getElementById("BQ");
-  BQ.element.style.top = '100px';
-  BQ.element.style.left = '150px';
+
   
- 
-  /*
   var BB1 = Object();
   BB1.element = document.getElementById("BB1");
   var BB2 = Object();
@@ -98,6 +95,6 @@ window.onload = function () {
    
   }
   
-  BQ.setSquare(2,2);*/
+  BQ.setSquare(2,2);
   
 }
