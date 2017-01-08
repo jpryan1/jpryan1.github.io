@@ -10,6 +10,7 @@ window.onload = function () {
   
   BQ.im.style.top = 10+'px';
   BQ.im.style.left = 15+'px';
+  alert(BQ.im.style.left);
   /*
   var BB1 = Object();
   BB1.element = document.getElementById("BB1");
