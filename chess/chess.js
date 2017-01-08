@@ -2,14 +2,10 @@
 //Initialize the board:
 window.onload = function () { 
 
-  var BK = new Object();
   var BKe = document.getElementById("BK");
-  BK.im = BKe;
-  var BQ = new Object();
-  var BQe = document.getElementById("BQ");
-  BQ.im = BQe;
-  BQ.im.style.top = 10+'px';
-  BQ.im.style.left = 16+'px';
+  BKe.style.left = 10+'px';
+  BKe.style.top = 15+'px';
+  
  
   /*
   var BB1 = Object();
