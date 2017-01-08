@@ -8,7 +8,7 @@ window.onload = function () {
   BQ.im = document.getElementById("BQ");*/
   document.getElementById("BQ").style.top = 10+'px';
   document.getElementById("BQ").style.left = 12+'px';
-  
+  alert( document.getElementById("BQ").style);
   
  
   /*
