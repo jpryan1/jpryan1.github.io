@@ -97,9 +97,3 @@ window.onload = function () {
   BQ.setSquare(2,2);
   
 }
-
-
-function setSquarefunction(row, col){
-  this.top = (15+row*25)+'px';
-  this.left = (15+col*25)+'px';
-}
