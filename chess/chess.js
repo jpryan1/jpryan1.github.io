@@ -3,13 +3,13 @@
 window.onload = function () { 
 
   var BK = Object();
-  BK.element = document.getElementById("BK");
+  BK.im = document.getElementById("BK");
   var BQ = Object();
-  BQ.element = document.getElementById("BQ");  
+  BQ.im = document.getElementById("BQ");  
   
   
-  BQ.element.style.top = (15+25)+'px';
-  BQ.element.style.left = (15+25)+'px';
+  BQ.im.style.top = 10+'px';
+  BQ.im.style.left = 15+'px';
   /*
   var BB1 = Object();
   BB1.element = document.getElementById("BB1");
