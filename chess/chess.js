@@ -5,12 +5,12 @@ window.onload = function () {
   var BK = Object();
   BK.im = document.getElementById("BK");
   var BQ = Object();
-  BQ.im = document.getElementById("BQ");  
+  BQ.im = document.getElementById("BQ");
+  document.getElementById("BQ").style.top = 10+'px';
+  document.getElementById("BQ").style.top = 12+'px';
   
   
-  BQ.im.style.top = 10+'px';
-  BQ.im.style.left = 15+'px';
-  alert(BQ.im.style.left);
+ 
   /*
   var BB1 = Object();
   BB1.element = document.getElementById("BB1");
