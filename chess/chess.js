@@ -9,7 +9,7 @@ window.onload = function () {
   
   
   BQ.element.style.top = (15+25)+'px';
-  BQ..element.style.left = (15+25)+'px';
+  BQ.element.style.left = (15+25)+'px';
   
   var BB1 = Object();
   BB1.element = document.getElementById("BB1");
