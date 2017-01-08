@@ -81,15 +81,15 @@ window.onload = function () {
   
   for(piece of whites){
     piece.setSquare =  function(row, col){
-                          this.style.top = (15+row*25)+'px';
-                          this.style.left = (15+col*25)+'px';
+                          this.element.style.top = (15+row*25)+'px';
+                          this.element.style.left = (15+col*25)+'px';
                         }
   
   }
   for(piece of blacks){
     piece.setSquare =  function(row, col){
-                          this.style.top = (15+row*25)+'px';
-                          this.style.left = (15+col*25)+'px';
+                          this.element.style.top = (15+row*25)+'px';
+                          this.element.style.left = (15+col*25)+'px';
                         }
    
   }
