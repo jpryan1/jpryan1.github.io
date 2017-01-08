@@ -10,8 +10,8 @@
    left: 0;
 }
 
-#BR, #BN, #BB, #BQ, #BK, #BP,
-#WR, #WN, #WB, #WQ, #WK, #WP{
+#BR1, #BR2, #BN1, #BN2, #BB1, #BB2, #BQ, #BK, #BP1, #BP2, #BP3, #BP4, #BP5, #BP6, #BP7, #BP8,
+#WR1, #WR2, #WN1, #WN2, #WB1, #WB2, #WQ, #WK, #WP1, #WP2, #WP3, #WP4, #WP5, #WP6, #WP7, #WP8,{
    position: absolute;
 }
 
