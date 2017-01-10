@@ -77,24 +77,31 @@ window.onload = function () {
   var WR2 = Object();
   WR2.element = document.getElementById("WR2");
 
-  whites = [WK, WQ, WR1, WR2, WN1, WN2, WB1, WB2, WP1, WP2, WP3, WP4, WP5, WP6, WP7, WP8];
-  blacks = [BK, BQ, BR1, BR2, BN1, BN2, BB1, BB2, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
-  
-  for(piece of whites){
-    piece.setSquare =  function(row, col){
-                          this.element.style.top = (15+row*25)+'px';
-                          this.element.style.left = (15+col*25)+'px';
-                        }
-  
+  blacks = [BR1, BN1, BB1, BQ, BK, BB2, BN2, BR1, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
+  whites = [WR1, WN1, WB1, WQ, WK, WB2, WN2, WR2, WP1, WP2, WP3, WP4, WP5, WP6, WP7, WP8];
+  squareFun = function(row, col){
+                          this.element.style.top = (12+row*61.5)+'px';
+                          this.element.style.left = (12+col*61.5)+'px';
+                        };
+  for(var i=0; i<2; i++){
+    for(var j=0; j<8; j++){
+        whites[i*8+j].setSquare = squareFun;
+        whites[i*8+j].setSquare(i, j);
+    }
   }
-  for(piece of blacks){
-    piece.setSquare =  function(row, col){
-                          this.element.style.top = (15+row*25)+'px';
-                          this.element.style.left = (15+col*25)+'px';
-                        }
-   
+  for(var i=0; i<2; i++){
+    for(var j=0; j<8; j++){
+        whites[i*8+j].setSquare = squareFun;
+        whites[i*8+j].setSquare(7-i, j);
+    }
   }
   
-  BQ.setSquare(2,2);
+  
+  
+  
+  
+  
+  
+  
   
 }
