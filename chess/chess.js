@@ -79,8 +79,8 @@ window.onload = function () {
 
   blacks = [BR1, BN1, BB1, BQ, BK, BB2, BN2, BR1, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
   whites = [WR1, WN1, WB1, WQ, WK, WB2, WN2, WR2, WP1, WP2, WP3, WP4, WP5, WP6, WP7, WP8];
-  squareFun = function(row, col){
-                          this.element.style.top = (14+row*61.5)+'px';
+  squareFun = function(row, col){ //bottom left is 0,0
+                          this.element.style.top = (14+(7-row)*61.5)+'px';
                           this.element.style.left = (14+col*61.5)+'px';
                         };
   for(var i=0; i<2; i++){
