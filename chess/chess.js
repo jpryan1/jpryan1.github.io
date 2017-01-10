@@ -77,7 +77,7 @@ window.onload = function () {
   var WR2 = Object();
   WR2.element = document.getElementById("WR2");
 
-  blacks = [BR1, BN1, BB1, BQ, BK, BB2, BN2, BR1, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
+  blacks = [BR1, BN1, BB1, BQ, BK, BB2, BN2, BR2, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BP8];
   whites = [WR1, WN1, WB1, WQ, WK, WB2, WN2, WR2, WP1, WP2, WP3, WP4, WP5, WP6, WP7, WP8];
   squareFun = function(row, col){ //bottom left is 0,0
                           this.element.style.top = (14+(7-row)*61.5)+'px';
@@ -95,13 +95,5 @@ window.onload = function () {
         blacks[i*8+j].setSquare(7-i, j);
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
   
 }
