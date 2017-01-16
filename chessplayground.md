@@ -55,10 +55,6 @@ Hello
 
 <p id="status" > </p>
 
-<p style="color:red;" id="debug" > </p>
+<p style="color:red;" id="debug" style="display:none;" > </p>
 
-
-
-
-Chess
 
