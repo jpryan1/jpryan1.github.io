@@ -47,8 +47,8 @@ Hello
 
 
 <div>
-<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="images/chess/left.jpg" /> 
-<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="images/chess/right.jpg" /></div>
+<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.jpg" /> 
+<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.jpg" /></div>
 <input type="text" id="pgn" value="">
 
 <button onclick="pgnSubmit()">Submit</button>
