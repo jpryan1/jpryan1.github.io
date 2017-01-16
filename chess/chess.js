@@ -156,6 +156,7 @@ function pgnSubmit(){
 	moves = moves.split(".");
 	//I'm new to this, so maybe a lame way to do it
 	moves = moves.slice(1, moves.length); //remove first number
+    
 	var move;
 	for(var i=0; i<moves.length; i++){
 		move = moves[i];
@@ -164,16 +165,19 @@ function pgnSubmit(){
 	if(parsePGN(moves)){
         document.getElementById("status").innerHTML = "Parse Successful!";
 		showButtons();
+    }else{
+        document.getElementById("status").innerHTML = "Invalid PGN!";
+        hideButtons();
     }
 }
 
-function isValid(pgn){
-    if(typeof pgn !== 'string'){
+function isValid(input){
+    if(typeof input !== 'string'){
         return false;
     }
-    pgn = pgn.replace(/[|]|\.|[0-9]|[a-z]|[A-Z]/g,"");
-    pgn = pgn.trim();
-    if(pgn.length>0){
+    input = input.replace(/[|]|\.|[0-9]|[a-z]|[A-Z]/g,"");
+    input = input.trim();
+    if(input.length>0){
         return false;
     }
     return true;
@@ -200,6 +204,7 @@ function parsePGN(moves){
     var move;
     updatePotentialMoves();
     for(var i = 0; i< moves.length; i++){
+        
         //the update functions trust the move_IDX to signify current positions
         move = moves[i];
         if(!makeMove( move[0], 1)){
@@ -216,7 +221,7 @@ function parsePGN(moves){
     
     //document.getElementById("debug").innerHTML = debugInfo();
     move_IDX = 0;
-    return 1;
+    return true;
 
 }
 function makeMove(move, color){ //needs to return false for impossible move
@@ -232,9 +237,8 @@ function makeMove(move, color){ //needs to return false for impossible move
     
     if(isCastle(move)){
         processCastle(move, color);
-        return;
+        return true;
     }
-    
     
     
     var newPos = whereTo(move); //GOOD
@@ -242,7 +246,7 @@ function makeMove(move, color){ //needs to return false for impossible move
     var moving_piece = whichPiece(move, newPos, color); //NEEDS WORK
     
     var oldPos = moving_piece.pos[move_IDX]; //GOOD
-    
+   
     if(move.indexOf('x')>-1){ //THIS IS WRONG ON EN PASSANT
         var taken_color;
         if(color==1){
@@ -261,12 +265,13 @@ function makeMove(move, color){ //needs to return false for impossible move
     
 }
 function whichPiece(move, newPos, color){
+    
     //based on first letter and location of move
     var code = move.charCodeAt(0);
+    var movers;
     if(code>96){//aka lower case, aka pawn
-        return whichOfThem(newPos, color, [8,9,10,11,12,13,14,15]);
+        movers = whichOfThem(newPos, color, [8,9,10,11,12,13,14,15]);
     }else{
-        var movers;
         switch(code){
             case 66: //B
                 movers = whichOfThem(newPos, color, [2, 5]);
@@ -282,10 +287,11 @@ function whichPiece(move, newPos, color){
                 alert("ERROR Which piece?");
                 break;
         }
-        if(movers.length>1){
-            return settleAmbiguity(move, newPos, color, movers);
-        }return movers[0];
     }
+    if(movers.length>1){
+        return settleAmbiguity(move, newPos, color, movers);
+    }
+    return movers[0];
 }
 function whichOfThem(pos, color, nums){
     var pieces;
