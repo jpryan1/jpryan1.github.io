@@ -276,7 +276,7 @@ function parsePGN(moves){
     for(var i = 0; i< moves.length-1; i++){
         //the update functions trust the move_IDX to signify current positions
         move = moves[i];
-        tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ". "
+        tableHTML.innerHTML += "<tr><td>" + ((move_IDX/2)+1) + ". "
                             + move[0] + "</td><td>" + move[1]
                             + "</td></tr>";
         
@@ -304,7 +304,7 @@ function parsePGN(moves){
         if(!makeMove( move[1].replace(/\+|#/,""), 2)){
             return false;
         }
-        tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
+        tableHTML.innerHTML += "<tr><td>" + ((move_IDX+1)/2) + ".   "
         + move[0] + "</td><td>" + move[1]
         + "</td></tr>";
     }else{
