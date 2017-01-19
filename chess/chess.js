@@ -306,10 +306,8 @@ function parsePGN(moves){
 //            //its just the score
             report("Score detected");
             last_move--;
-//            tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
-//            + move[0] + "</td></tr>";
-            
-//            
+            tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
+            + move[0] + "</td></tr>";
         }else{
             updatePotentialMoves();
             if(!makeMove( move[1].replace(/\+|#/,""), 2)){
@@ -855,7 +853,7 @@ function updatePawnPotentialMoves(pawn, color){
 function report(statement){
 	//for debugging - disabled on my website!
     
-    document.getElementById("debug").innerHTML +=(statement+"<br />");
+    //document.getElementById("debug").innerHTML +=(statement+"<br />");
     
 }
 
