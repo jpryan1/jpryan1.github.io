@@ -75,6 +75,7 @@ table.tab td{
 		<button onclick="pgnSubmit()">Submit</button>
 		<button onclick="reset()">Reset</button>
 		<button onclick="reverse()">Reverse</button>
+        <button onclick="example()">Example</button>
 	</div>
 </div>
 <br />

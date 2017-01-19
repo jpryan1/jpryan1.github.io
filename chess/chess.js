@@ -145,6 +145,10 @@ function reset(){
                            [2,2,2,2,2,2,2,2]
                            ];
 }
+function example(){
+    document.getElementById("pgn").value = "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nd4 4.Nxd4 exd4 5.c3 Qg5 6.O-O Qxb5 7.cxd4 Nf6 8.Nc3 Qc4 9.e5 Nd5 10.Nxd5 Qxd5 11.d3 d6 12.exd6 Bxd6 13.Re1+ Be6 14.Qa4+ c6 15.Be3 O-O 16.Qd1 h6 17.Qc1 Bb4 18.Re2 Rfe8 19.Bxh6 gxh6 20.Qxh6 Bf8 21.Qf6 Qf5 22.Qh4 Bd5 23.Qg3+ Qg6 24.Qxg6+ fxg6 25.Re5 Rxe5 26.dxe5 Bg7 27.d4 b6 28.f4 c5 29.dxc5 bxc5 30.b3 c4 31.Rd1 c3 32.Rc1 Rc8 33.g3 c2 34.Kf2 Bf8 35.Ke2 Ba3 36.Rxc2 Rxc2+ 37.Kd3 Rxh2 ";
+    pgnSubmit();
+}
 
 // PGN INPUT
 //TODO: Nothing really
@@ -171,13 +175,18 @@ function pgnSubmit(){
     
     resetBoard();
 	var pgn = document.getElementById("pgn").value;
-    if(!isValid(pgn)){
+	var arr = pgn.split("]");
+    if(arr.length<1){
         document.getElementById("status").innerHTML = "Invalid PGN!";
         hideButtons();
         return;
     }
-	var arr = pgn.split("]");
 	var moves = arr[arr.length-1];
+    if(!isValid(moves)){
+        document.getElementById("status").innerHTML = "Invalid PGN!";
+        hideButtons();
+        return;
+    }
 	moves = moves.split(".");
 	//I'm new to this, so maybe a lame way to do it
 	moves = moves.slice(1, moves.length); //remove first number
