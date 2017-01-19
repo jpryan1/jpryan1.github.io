@@ -300,16 +300,16 @@ function parsePGN(moves){
     
     
     if(move.length>1){
-        var firstchar = move[1].charCodeAt(0);
-        alert(firstchar);
-        if(!isCastle(move[1].replace(/\+|#/,""))&&(firstchar<65||firstchar>122)){
-            //its just the score
-            last_move--;
-            tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
-            + move[0] + "</td></tr>";
-            break;
-            
-        }
+//        var firstchar = move[1].charCodeAt(0);
+//        alert(firstchar);
+//        if(!isCastle(move[1].replace(/\+|#/,""))&&(firstchar<65||firstchar>122)){
+//            //its just the score
+//            last_move--;
+//            tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
+//            + move[0] + "</td></tr>";
+//            break;
+//            
+//        }
         updatePotentialMoves();
         if(!makeMove( move[1].replace(/\+|#/,""), 2)){
             return false;
