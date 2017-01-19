@@ -332,6 +332,7 @@ function makeMove(move, color){ //needs to return false for impossible move
     //assumption: move_IDX refers to locations of pieces
     //before move. Potentials are set up. New positions to be added
     //at index move_IDX + 1
+    report(move);
     for(var i=0; i<16; i++){
         whites[i].pos[move_IDX+1] = whites[i].pos[move_IDX];
         blacks[i].pos[move_IDX+1] = blacks[i].pos[move_IDX];
@@ -850,8 +851,8 @@ function updatePawnPotentialMoves(pawn, color){
 
 
 function report(statement){
-	//for debugging - disabled on my website!
-   // document.getElementById("debug").innerHTML +=(statement+"<br />");
+	for debugging - disabled on my website!
+    document.getElementById("debug").innerHTML +=(statement+"<br />");
     
 }
 
