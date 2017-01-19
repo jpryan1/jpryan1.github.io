@@ -62,6 +62,7 @@ table.tab td{
 		<table id="table" class="tab">
 		</table>
 	</div>
+	<br />
 	<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.png" /> 
 	<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.png" />
 	<input type="text" id="pgn" value="">
