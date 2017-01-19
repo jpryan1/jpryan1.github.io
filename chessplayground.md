@@ -66,6 +66,7 @@ table.tab td{
 	<br />
 	<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.png" /> 
 	<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.png" />
+	<br />
 	<input type="text" id="pgn" value="">
 	<button onclick="pgnSubmit()">Submit</button>
 	<button onclick="reset()">Reset</button>
