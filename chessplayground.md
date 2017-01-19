@@ -2,16 +2,12 @@
 layout: default
 ---
 <link rel="stylesheet" type="text/css" href="/chess/chess.css">
-
 <style>
 table.tab td{
 	width:100;
 	height:30;
 }
-
-
 </style>
-
 <div class="parent">
 <img class="board" src="/images/chess/board.png"  />
 <img id="BR1" src="/images/chess/BR.png" />
@@ -30,9 +26,6 @@ table.tab td{
 <img id="BP6" src="/images/chess/BP.png" />
 <img id="BP7" src="/images/chess/BP.png" />
 <img id="BP8" src="/images/chess/BP.png" />
-
-
-
 <img id="WR1" src="/images/chess/WR.png" />
 <img id="WR2" src="/images/chess/WR.png" />
 <img id="WN1" src="/images/chess/WN.png" />
@@ -53,26 +46,15 @@ table.tab td{
 <table id="table" class="tab">
 </table></div>
 </div>
-
 <script type="text/javascript" src="/chess/chess.js">
 </script>
-
-
-
 <div>
 <img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.png" /> 
 <img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.png" />
 </div>
-
 <input type="text" id="pgn" value="">
-
 <button onclick="pgnSubmit()">Submit</button>
-
 <button onclick="reset()">Reset</button>
-
 <button onclick="reverse()">Reverse</button>
-
-
 <p id="status" > </p>
-
-<p style="color:red;" id="debug" > </p>
+<p style="color:red;" id="debug" ></p>
