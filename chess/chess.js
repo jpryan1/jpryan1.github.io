@@ -126,6 +126,7 @@ function initializeBoard(){
 }
 
 function reset(){
+    document.getElementById("table").innerHTML = "";
     move_IDX=0;
     if(isReversed){
         reverse();
