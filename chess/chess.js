@@ -852,6 +852,7 @@ function updatePawnPotentialMoves(pawn, color){
 
 function report(statement){
 	//for debugging - disabled on my website!
+    
     document.getElementById("debug").innerHTML +=(statement+"<br />");
     
 }
