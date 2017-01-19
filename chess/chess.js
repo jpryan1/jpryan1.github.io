@@ -305,19 +305,20 @@ function parsePGN(moves){
         if( !isCastle( move[1].replace(/\+|#/,"") ) && (firstchar<65||firstchar>122) ){
 //            //its just the score
             report("Score detected");
-//            last_move--;
+            last_move--;
 //            tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
 //            + move[0] + "</td></tr>";
-//            break;
+            
 //            
+        }else{
+            updatePotentialMoves();
+            if(!makeMove( move[1].replace(/\+|#/,""), 2)){
+                return false;
+            }
+            tableHTML.innerHTML += "<tr><td>" + ((move_IDX+1)/2) + ".   "
+                + move[0] + "</td><td>" + move[1]
+                + "</td></tr>";
         }
-        updatePotentialMoves();
-        if(!makeMove( move[1].replace(/\+|#/,""), 2)){
-            return false;
-        }
-        tableHTML.innerHTML += "<tr><td>" + ((move_IDX+1)/2) + ".   "
-        + move[0] + "</td><td>" + move[1]
-        + "</td></tr>";
     }else{
         last_move--;
         tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
