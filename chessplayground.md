@@ -59,8 +59,12 @@ table.tab td{
 	<img id="WP6" src="/images/chess/WP.png" />
 	<img id="WP7" src="/images/chess/WP.png" />
 	<img id="WP8" src="/images/chess/WP.png" />
-	<div style="display:inline;position:absolute;top:20px;left:530px;height:510px;overflow:scroll;" >
-		<table id="table" class="tab">
+	<div style="display:inline;
+			position:absolute;
+			top:20px;left:530px;
+			height:510px;
+			overflow:scroll;" >
+		<table style="background-color:white;" id="table" class="tab">
 		</table>
 	</div>
 	<br />
@@ -73,5 +77,6 @@ table.tab td{
 		<button onclick="reverse()">Reverse</button>
 	</div>
 </div>
+<br />
 <p id="status" > </p>
 <p style="color:red;" id="debug" ></p>
