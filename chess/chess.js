@@ -300,8 +300,8 @@ function parsePGN(moves){
     
     
     if(move.length>1){
-//        var firstchar = move[1].charCodeAt(0);
-//        report(firstchar);
+        var firstchar = move[1].charCodeAt(0);
+        report(firstchar);
 //        if(!isCastle(move[1].replace(/\+|#/,""))&&(firstchar<65||firstchar>122)){
 //            //its just the score
 //            report("Score detected");
