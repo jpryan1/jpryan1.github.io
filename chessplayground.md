@@ -59,18 +59,19 @@ table.tab td{
 	<img id="WP6" src="/images/chess/WP.png" />
 	<img id="WP7" src="/images/chess/WP.png" />
 	<img id="WP8" src="/images/chess/WP.png" />
-	<div style="display:inline;position:absolute;top:20px;left:530px;height:530px;overflow:scroll;" >
+	<div style="display:inline;position:absolute;top:20px;left:530px;height:510px;overflow:scroll;" >
 		<table id="table" class="tab">
 		</table>
 	</div>
 	<br />
 	<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.png" /> 
 	<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.png" />
-	<br />
-	<input type="text" id="pgn" value="">
-	<button onclick="pgnSubmit()">Submit</button>
-	<button onclick="reset()">Reset</button>
-	<button onclick="reverse()">Reverse</button>
+	<div style="position:relative;left:400px">
+		<input type="text" id="pgn" value="">
+		<button onclick="pgnSubmit()">Submit</button>
+		<button onclick="reset()">Reset</button>
+		<button onclick="reverse()">Reverse</button>
+	</div>
 </div>
 <p id="status" > </p>
 <p style="color:red;" id="debug" ></p>
