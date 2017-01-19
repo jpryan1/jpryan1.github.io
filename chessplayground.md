@@ -4,8 +4,9 @@ layout: default
 <style>
 .parent{
    position: relative;
-   top: 100px;
+   top: 0px;
    left: 100px;
+   height:700px;
 }
    
 .board{
