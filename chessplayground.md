@@ -42,7 +42,7 @@ table.tab td{
 <img id="WP6" src="/images/chess/WP.png" />
 <img id="WP7" src="/images/chess/WP.png" />
 <img id="WP8" src="/images/chess/WP.png" />
-<div style="position:absolute;top:20;left:530;height:530;overflow:scroll;" >
+<div style="display:inline;position:absolute;top:20;left:530;height:530;overflow:scroll;" >
 <table id="table" class="tab">
 </table></div>
 </div>
