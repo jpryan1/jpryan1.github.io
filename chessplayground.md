@@ -4,7 +4,7 @@ layout: default
 <link rel="stylesheet" type="text/css" href="/chess/chess.css">
 <style>
 table.tab td{
-	width:100px;
+	width:130px;
 	height:30px;
 }
 </style>
