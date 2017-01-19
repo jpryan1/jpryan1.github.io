@@ -4,8 +4,8 @@ layout: default
 <link rel="stylesheet" type="text/css" href="/chess/chess.css">
 <style>
 table.tab td{
-	width:100;
-	height:30;
+	width:100px;
+	height:30px;
 }
 </style>
 <div class="parent">
@@ -42,7 +42,7 @@ table.tab td{
 <img id="WP6" src="/images/chess/WP.png" />
 <img id="WP7" src="/images/chess/WP.png" />
 <img id="WP8" src="/images/chess/WP.png" />
-<div style="display:inline;position:absolute;top:20;left:530;height:530;overflow:scroll;" >
+<div style="display:inline;position:absolute;top:20px;left:530px;height:530px;overflow:scroll;" >
 <table id="table" class="tab">
 </table></div>
 </div>
