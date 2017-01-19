@@ -1,7 +1,8 @@
 
 
 
-var blacks, whites, move_IDX, last_move, occupied;
+var blacks, whites, move_IDX, last_move, occupied, isReversed;
+
 window.onload = function () {
     hideButtons();
     initializeBoard();
@@ -11,6 +12,7 @@ window.onload = function () {
 //TODO: Nothing
 function initializeBoard(){
   move_IDX = 0;
+    isReversed = false;
     
     occupied = [[1,1,1,1,1,1,1,1],
        [1,1,1,1,1,1,1,1],
@@ -123,7 +125,26 @@ function initializeBoard(){
   }
 }
 
-
+function reset(){
+    move_IDX=0;
+    if(isReversed){
+        reverse();
+    }
+    resetBoard();
+    hideButtons();
+    document.getElementById("pgn").value = "";
+    document.getElementById("status").innerHTML = "";
+    document.getElementById("debug").innerHTML = "";
+    occupied = [[1,1,1,1,1,1,1,1],
+                           [1,1,1,1,1,1,1,1],
+                           [0,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0],
+                           [0,0,0,0,0,0,0,0],
+                           [2,2,2,2,2,2,2,2],
+                           [2,2,2,2,2,2,2,2]
+                           ];
+}
 
 // PGN INPUT
 //TODO: Nothing really
@@ -132,18 +153,22 @@ function resetBoard(){
         for(var j=0; j<8; j++){
             whites[i*8+j].setSquare(i+1, j+1);
             whites[i*8+j].pos = [[i+1, j+1]];
+            whites[i*8+j].element.style.display = "inline";
         }
     }
     for(var i=0; i<2; i++){
         for(var j=0; j<8; j++){
             blacks[i*8+j].setSquare(8-i, j+1);
             blacks[i*8+j].pos = [[8-i, j+1]];
+            blacks[i*8+j].element.style.display = "inline";
+
         }
     }
 
 }
 
 function pgnSubmit(){
+    
     resetBoard();
 	var pgn = document.getElementById("pgn").value;
     if(!isValid(pgn)){
@@ -160,8 +185,11 @@ function pgnSubmit(){
 	var move;
 	for(var i=0; i<moves.length; i++){
 		move = moves[i];
-		moves[i] = move.slice(0,move.length-1).trim().split(" ");
+		moves[i] =
+        move.slice(0,move.length-1).trim().split(" ");
 	}
+    
+    
 	if(parsePGN(moves)){
         document.getElementById("status").innerHTML = "Parse Successful!";
 		showButtons();
@@ -175,7 +203,7 @@ function isValid(input){
     if(typeof input !== 'string'){
         return false;
     }
-    input = input.replace(/[|]|\.|[0-9]|[a-z]|[A-Z]/g,"");
+    input = input.replace(/[|]|\.|[0-9]|[a-z]|[A-Z]|#|\+|\-/g,"");
     input = input.trim();
     if(input.length>0){
         return false;
@@ -190,43 +218,97 @@ function hideButtons(){
     document.getElementById("left").style.display="none";
     document.getElementById("right").style.display="none";
 }
-
+function reverse(){
+    var fun;
+    if(isReversed){
+        isReversed = false;
+        fun = function(row, col){ //bottom left is 1,1. 0,0 is off the board.
+            if(row === 0 || col === 0){
+                this.element.style.display = 'none';
+            }else{
+                this.element.style.top = (15+(8-row)*61.5)+'px';
+                this.element.style.left = (15+(col-1)*61.5)+'px';
+            }
+        };
+        
+    }else{
+        isReversed = true;
+        fun = function(row, col){ //bottom left is 1,1. 0,0 is off the board.
+            if(row === 0 || col === 0){
+                this.element.style.display = 'none';
+            }else{
+                this.element.style.top = (15+(row-1)*61.5)+'px';
+                this.element.style.left = (15+(8-col)*61.5)+'px';
+            }
+        };
+    }
+    var position;
+    for(var i=0;i<16;i++){
+        whites[i].setSquare = fun;
+        blacks[i].setSquare = fun;
+        position = whites[i].pos[move_IDX];
+        whites[i].setSquare(position[0], position[1]);
+        position = blacks[i].pos[move_IDX];
+        blacks[i].setSquare(position[0], position[1]);
+    }
+}
 
 // PARSING PGN INTO TIMELINE OF POSITIONS
-//TODO: 1) Castling
+//TODO:
 //      2) Detect and settle ambiguity
-//      3) En passant
 
 function parsePGN(moves){
     //each element of moves is an array of 2 strings, each of which is a move.
-    
+    var tableHTML = document.getElementById("table");
     last_move = moves.length*2; //don't worry about this until later.
     var move;
     updatePotentialMoves();
-    for(var i = 0; i< moves.length; i++){
-        
+    for(var i = 0; i< moves.length-1; i++){
         //the update functions trust the move_IDX to signify current positions
         move = moves[i];
-        if(!makeMove( move[0], 1)){
+        tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ". "
+                            + move[0] + "</td><td>" + move[1]
+                            + "</td></tr>";
+        
+        if(!makeMove( move[0].replace(/\+|#/,""), 1)){
             return false;
         }
         move_IDX++;
         updatePotentialMoves();
-        if(!makeMove( move[1], 2)){
+        if(!makeMove( move[1].replace(/\+|#/,""), 2)){
             return false;
         }
         move_IDX++;
         updatePotentialMoves();
     }
+    move = moves[moves.length-1];
+ 
+    if(!makeMove( move[0].replace(/\+|#/,""), 1)){
+        return false;
+    }
+    move_IDX++;
     
+    
+    if(move.length>1){
+        updatePotentialMoves();
+        if(!makeMove( move[1].replace(/\+|#/,""), 2)){
+            return false;
+        }
+        tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
+        + move[0] + "</td><td>" + move[1]
+        + "</td></tr>";
+    }else{
+        last_move--;
+        tableHTML.innerHTML += "<tr><td>" + (move_IDX+1) + ".   "
+        + move[0] + "</td></tr>";
+
+    }
     //document.getElementById("debug").innerHTML = debugInfo();
     move_IDX = 0;
     return true;
 
 }
 function makeMove(move, color){ //needs to return false for impossible move
-    
-    
     //assumption: move_IDX refers to locations of pieces
     //before move. Potentials are set up. New positions to be added
     //at index move_IDX + 1
@@ -239,14 +321,11 @@ function makeMove(move, color){ //needs to return false for impossible move
         processCastle(move, color);
         return true;
     }
-    
-    
     var newPos = whereTo(move); //GOOD
     
-    var moving_piece = whichPiece(move, newPos, color); //NEEDS WORK
+    var isEnPassant = false;
+    var moving_piece;
     
-    var oldPos = moving_piece.pos[move_IDX]; //GOOD
-   
     if(move.indexOf('x')>-1){ //THIS IS WRONG ON EN PASSANT
         var taken_color;
         if(color==1){
@@ -254,20 +333,43 @@ function makeMove(move, color){ //needs to return false for impossible move
         }else{
             taken_color=whites;
         }
-        var remove = takenPiece(newPos, taken_color); //FIX THIS FOR EN PASSANT
+        var remove = pieceOnSquare(newPos, taken_color); //FIX THIS FOR EN PASSANT
+        if(remove==0){//enpassant
+            isEnPassant = true;
+            var sourceCol = move.charCodeAt(0) - 96;
+            var takenPawnPos, sourceRow;
+            //require that previous move was a pawn moving two spaces?
+            if(color==1){
+                sourceRow = newPos[0]-1;
+                takenPawnPos = [newPos[0]-1, newPos[1]];
+                occupied[newPos[0]-2][newPos[1]-1] = 0;
+                moving_piece = pieceOnSquare([sourceRow,sourceCol], whites);
+            }else{
+                sourceRow = newPos[0]+1;
+                takenPawnPos = [newPos[0]+1, newPos[1]];
+                occupied[newPos[0]][newPos[1]-1] = 0;
+                moving_piece = pieceOnSquare([sourceRow,sourceCol], blacks);
+            }
+            remove = pieceOnSquare(takenPawnPos, taken_color);
+          
+        }
         remove.pos[move_IDX+1] = [0,0]; //
-        
     }
+    if(!isEnPassant){
+        moving_piece = whichPiece(move, newPos, color); //NEEDS WORK
+    }
+    var oldPos = moving_piece.pos[move_IDX]; //GOOD
     moving_piece.pos[move_IDX+1] = newPos;
     occupied[newPos[0]-1][newPos[1]-1] = color;
+  
     occupied[oldPos[0]-1][oldPos[1]-1] = 0;
     return true;
     
 }
 function whichPiece(move, newPos, color){
-    
     //based on first letter and location of move
     var code = move.charCodeAt(0);
+ 
     var movers;
     if(code>96){//aka lower case, aka pawn
         movers = whichOfThem(newPos, color, [8,9,10,11,12,13,14,15]);
@@ -275,25 +377,32 @@ function whichPiece(move, newPos, color){
         switch(code){
             case 66: //B
                 movers = whichOfThem(newPos, color, [2, 5]);
+                break;
             case 75: //K
                 movers = whichOfThem(newPos, color, [4]);
+                break;
             case 78: //N
                 movers = whichOfThem(newPos, color, [1, 6]);
+                break;
             case 81: //Q
                 movers = whichOfThem(newPos, color, [3]);
+                break;
             case 82: //R
                 movers = whichOfThem(newPos, color, [0, 7]);
+                break;
             default:
                 alert("ERROR Which piece?");
                 break;
         }
     }
     if(movers.length>1){
+       
         return settleAmbiguity(move, newPos, color, movers);
     }
     return movers[0];
 }
 function whichOfThem(pos, color, nums){
+    
     var pieces;
     if(color == 1){
         pieces = whites;
@@ -302,27 +411,30 @@ function whichOfThem(pos, color, nums){
     }
     var num, piece, potpos;
     var correctPieces = [];
+    
     for(var j=0; j<nums.length; j++){
         num = nums[j];
+      
         piece = pieces[num];
         for(var i = 0; i < piece.potential.length; i++){
             potpos = piece.potential[i];
-            
+        
             if(potpos[0]==pos[0] && potpos[1]==pos[1]){
                 correctPieces.push(piece);
             }
         }
-    }return correctPieces;
+    }
+    return correctPieces;
     
 }
 function whereTo(move){
     var len = move.length;
     var pos1 = move.charCodeAt(move.length-2)-96;
     var pos0 = move.charCodeAt(move.length-1)-48;
-    document.getElementById("debug").innerHTML += "Move is "+move+" giving "+pos0+" "+pos1+"<br />";
     return [pos0, pos1];
 }
-function takenPiece(pos, pieces){
+function pieceOnSquare(pos, pieces){
+    
     for(var i =0; i<pieces.length; i++){
         if(pos[0]==pieces[i].pos[move_IDX][0] && pos[1]==pieces[i].pos[move_IDX][1]){
             return pieces[i];
@@ -332,13 +444,103 @@ function takenPiece(pos, pieces){
 }
 
 function isCastle(move){
-    return false;
+    return move=="O-O"||move=="O-O-O";
 }
 function processCastle(move, color){
 
+    if(move=="O-O"){
+        if(color==1){
+            whites[4].pos[move_IDX+1] = [1,7];
+            whites[7].pos[move_IDX+1] = [1,6];
+            occupied[0][4] = 0;
+            occupied[0][5] = 1;
+            occupied[0][6] = 1;
+            occupied[0][7] = 0;
+        }else{
+            blacks[4].pos[move_IDX+1] = [8,7];
+            blacks[7].pos[move_IDX+1] = [8,6];
+            occupied[7][4] = 0;
+            occupied[7][5] = 2;
+            occupied[7][6] = 2;
+            occupied[7][7] = 0;
+
+        }
+    }else{
+        if(color==1){
+            whites[4].pos[move_IDX+1] = [1,3];
+            whites[0].pos[move_IDX+1] = [1,2];
+            occupied[0][0] = 0;
+            occupied[0][1] = 0;
+            occupied[0][2] = 1;
+            occupied[0][3] = 1;
+            occupied[0][4] = 0;
+
+        }else{
+            blacks[4].pos[move_IDX+1] = [8,3];
+            blacks[0].pos[move_IDX+1] = [8,2];
+            occupied[7][0] = 0;
+            occupied[7][1] = 0;
+            occupied[7][2] = 2;
+            occupied[7][3] = 2;
+            occupied[7][4] = 0;
+            
+        }
+    }
 }
+
+
 function settleAmbiguity( move, newPos, color, movers){
-    return movers[0];
+    
+    //Two cases: 1) There is another character present to indicate
+    //the moving piece's original row/col
+    //or 2) One of the moves would put the color into check
+    
+    //Case 1: Find first non-uppercase character in move. Is it second to last?
+    var helper,ascii;
+    var isCase2 = false;;
+    for(var i=0; i<move.length; i++){
+        ascii = move.charCodeAt(i);
+        if(ascii<65 || ascii > 90){
+            helper = move.charAt(i);
+            break;
+        }
+        if(i==move.length-3){
+            isCase2 = true;
+        }
+    }
+    report("iscase2 is "+isCase2);
+    
+    if(!isCase2){
+        //helper must be helpful!
+        if(helper.charCodeAt(0)>96){ //meaning is lower case char
+            var sourceCol = helper.charCodeAt(0)-96;
+            report("Ambiguity from col "+sourceCol);
+            for(var i=0; i<movers.length; i++){
+                if(movers[i].pos[move_IDX][1]==sourceCol){
+                    return movers[i];
+                }
+            }
+        }else{
+            var sourceRow = helper.charCodeAt(0)-48;
+            report("Ambiguity from row "+sourceRow);
+            for(var i=0; i<movers.length; i++){
+                if(movers[i].pos[move_IDX][0]==sourceRow){
+                    return movers[i];
+                }
+            }
+
+        }
+        
+    }
+    else{
+        //case2
+        report("CASE 2, CAN'T ACCOUNT!");
+        return movers[0];
+    }
+    
+    
+    
+    
 }
 
 // DISPLAYING MOVES
@@ -364,19 +566,15 @@ function updatePieces(){
 		if(move_IDX==piece.pos.length){ //TODO THIS MAY BE OBSOLETE METHOD
 			piece.setSquare(0,0);
 		}else if(move_IDX<piece.pos.length){
-			if(move_IDX==piece.pos.length-1){
-				piece.element.style.display = "inline";
-			}
-			pos = piece.pos[move_IDX];
+			piece.element.style.display = "inline";
+            pos = piece.pos[move_IDX];
 			piece.setSquare(pos[0], pos[1]);
 		}
 		piece = blacks[i];
 		if(move_IDX==piece.pos.length){
 			piece.setSquare(0,0);
 		}else if(move_IDX<piece.pos.length){
-			if(move_IDX==piece.pos.length-1){
-				piece.element.style.display = "inline";
-			}
+			piece.element.style.display = "inline";
 			pos = piece.pos[move_IDX];
 			piece.setSquare(pos[0], pos[1]);
 		}
@@ -398,7 +596,7 @@ function updateRooksPotentialMoves(){
     updateRookPotentialMoves(whites[0], 1);
     updateRookPotentialMoves(whites[7], 1);
     updateRookPotentialMoves(blacks[0], 2);
-    updateRookPotentialMoves(whites[7], 2);
+    updateRookPotentialMoves(blacks[7], 2);
 }
 function updateRookPotentialMoves(rook, color, queen=false){
     var captures;
@@ -411,7 +609,9 @@ function updateRookPotentialMoves(rook, color, queen=false){
         rook.potential = [];
     }
     var pos = rook.pos[move_IDX];
-    
+    if(pos[0]==0&&pos[1]==0){ //meaning the pawn has been taken.
+        return;
+    }
     var row = pos[0], col = pos[1];
     row++;
     while( row < 9 && occupied[row-1][col-1]!=color){
@@ -444,7 +644,8 @@ function updateRookPotentialMoves(rook, color, queen=false){
             break;
         }col--;
     }
-
+    
+    
 }
 function updateKnightsPotentialMoves(){
     updateKnightPotentialMoves(whites[1], 1);
@@ -457,6 +658,9 @@ function updateKnightPotentialMoves(knight, color){
     knight.potential = [];
     //a brief reflection: I should probably get better at OOP w/ Javascript. Oh well.
     var pos = knight.pos[move_IDX];
+    if(pos[0]==0&&pos[1]==0){ //meaning the pawn has been taken.
+        return;
+    }
     var move, newpos;
     var knightmoves = [-2, -1, 1, 2];
     for(var i=0; i<4; i++){
@@ -496,7 +700,9 @@ function updateBishopPotentialMoves(bishop, color, queen=false){
         bishop.potential = [];
     }
     var pos = bishop.pos[move_IDX];
-    
+    if(pos[0]==0&&pos[1]==0){ //meaning the pawn has been taken.
+        return;
+    }
     var row = pos[0], col = pos[1];
     row++;
     col++;
@@ -580,6 +786,9 @@ function updatePawnsPotentialMoves(){
 function updatePawnPotentialMoves(pawn, color){
     pawn.potential = [];
     var pos = pawn.pos[move_IDX];
+    if(pos[0]==0&&pos[1]==0){ //meaning the pawn has been taken.
+        return;
+    }
     if(color==1){ //this if else is mostly for readability
         
         //we assume pos[0]<8
@@ -620,14 +829,17 @@ function updatePawnPotentialMoves(pawn, color){
 }
 
 
-
+function report(statement){
+    document.getElementById("debug").innerHTML +=(statement+"<br />");
+    
+}
 
 
 
 /*TODO
-En passant
  checking
- check if piece is alive before checking potential
+ 
+ Anything involving promotion. This should require a big update.
 
 */
 
