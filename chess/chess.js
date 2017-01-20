@@ -147,8 +147,51 @@ function reset(){
                 ];
 }
 function example(){
-    document.getElementById("pgn").value = "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nd4 4.Nxd4 exd4 5.c3 Qg5 6.O-O Qxb5 7.cxd4 Nf6 8.Nc3 Qc4 9.e5 Nd5 10.Nxd5 Qxd5 11.d3 d6 12.exd6 Bxd6 13.Re1+ Be6 14.Qa4+ c6 15.Be3 O-O 16.Qd1 h6 17.Qc1 Bb4 18.Re2 Rfe8 19.Bxh6 gxh6 20.Qxh6 Bf8 21.Qf6 Qf5 22.Qh4 Bd5 23.Qg3+ Qg6 24.Qxg6+ fxg6 25.Re5 Rxe5 26.dxe5 Bg7 27.d4 b6 28.f4 c5 29.dxc5 bxc5 30.b3 c4 31.Rd1 c3 32.Rc1 Rc8 33.g3 c2 34.Kf2 Bf8 35.Ke2 Ba3 36.Rxc2 Rxc2+ 37.Kd3 Rxh2 ";
-    pgnSubmit();
+	document.getElementById("pgn").value = "[Event \"Third Rosenwald Trophy\"]\
+	[Site \"New York, NY USA\"]\
+	[Date \"1956.10.17\"]\
+	[EventDate \"1956.10.07\"]\
+	[Round \"8\"]\
+	[Result \"0-1\"]\
+	[White \"Donald Byrne\"]\
+	[Black \"Robert James Fischer\"]\
+	[ECO \"D92\"]\
+	[WhiteElo \"?\"]\
+	[BlackElo \"?\"]\
+	[PlyCount \"82\"]\
+	\
+	1. Nf3 Nf6 2. c4 g6 3. Nc3 Bg7 4. d4 O-O 5. Bf4 d5 6. Qb3 dxc4\
+	7. Qxc4 c6 8. e4 Nbd7 9. Rd1 Nb6 10. Qc5 Bg4 11. Bg5 {11. Be2\
+		followed by 12 O-O would have been more prudent. The bishop\
+		move played allows a sudden crescendo of tactical points to be\
+		uncovered by Fischer. -- Wade} Na4 {!} 12. Qa3 {On 12. Nxa4\
+			Nxe4 and White faces considerable difficulties.} Nxc3 {At\
+				first glance, one might think that this move only helps White\
+				create a stronger pawn center; however, Fischer's plan is\
+				quite the opposite. By eliminating the Knight on c3, it\
+				becomes possible to sacrifice the exchange via Nxe4 and smash\
+				White's center, while the King remains trapped in the center.}\
+				13. bxc3 Nxe4 {The natural continuation of Black's plan.}\
+					14. Bxe7 Qb6 15. Bc4 Nxc3 16. Bc5 Rfe8+ 17. Kf1 Be6 {!! If\
+						this is the game of the century, then 17...Be6!! must be the\
+						counter of the century. Fischer offers his queen in exchange\
+						for a fierce attack with his minor pieces. Declining this\
+							offer is not so easy: 18. Bxe6 leads to a 'Philidor Mate'\
+							(smothered mate) with ...Qb5+ 19. Kg1 Ne2+ 20. Kf1 Ng3+\
+							21. Kg1 Qf1+ 22. Rxf1 Ne2#. Other ways to decline the queen\
+							also run into trouble: e.g., 18. Qxc3 Qxc5} 18. Bxb6 Bxc4+\
+					19. Kg1 Ne2+ 20. Kf1 Nxd4+ {This tactical scenario, where a\
+						king is repeatedly revealed to checks, is sometimes called a\
+						\"windmill.\"} 21. Kg1 Ne2+ 22. Kf1 Nc3+ 23. Kg1 axb6 24. Qb4\
+					Ra4 25. Qxb6 Nxd1 26. h3 Rxa2 27. Kh2 Nxf2 28. Re1 Rxe1\
+					29. Qd8+ Bf8 30. Nxe1 Bd5 31. Nf3 Ne4 32. Qb8 b5 {Every piece\
+						and pawn of the black camp is defended. The white queen has\
+						nothing to do.} 33. h4 h5 34. Ne5 Kg7 35. Kg1 Bc5+ 36. Kf1\
+					Ng3+ {Now Byrne is hopelessly entangled in Fischer's mating\
+						net.} 37. Ke1 Bb4+ 38. Kd1 Bb3+ 39. Kc1 Ne2+ 40. Kb1 Nc3+\
+					41. Kc1 Rc2# 0-1\
+					";
+					pgnSubmit();
 }
 
 // PGN INPUT
@@ -183,23 +226,27 @@ function pgnSubmit(){
         return;
     }
     var moves = arr[arr.length-1];
+    moves = moves.replace(/\{[^}]*\}/g ,"");
     if(!isValid(moves)){
         document.getElementById("status").innerHTML = "Invalid PGN!";
         hideButtons();
         return;
     }
     moves = moves.split(".");
+    
     //I'm new to this, so maybe a lame way to do it
     moves = moves.slice(1, moves.length); //remove first number
     
     var move;
-    for(var i=0; i<moves.length; i++){
+    for(var i=0; i<moves.length-1; i++){
         move = moves[i];
         moves[i] =
-        move.slice(0,move.length-1).trim().split(" ");
+        move.slice(0,move.length-1).trim().split(/\s+/);
+        
     }
-    
-    
+    move = moves[moves.length-1]; //DON'T SLICE THE LAST ONE! NO NUMBER TO SLICE OFF
+    moves[moves.length-1] = move.trim().split(/\s+/);
+    report(moves);
     if(parsePGN(moves)){
         document.getElementById("status").innerHTML = "Parse Successful!";
         showButtons();
@@ -273,9 +320,9 @@ function parsePGN(moves){
     var move;
     updatePotentialMoves();
     for(var i = 0; i< moves.length-1; i++){
+        
         //the update functions trust the move_IDX to signify current positions
         move = moves[i];
-        
         tableAdd(move[0], move[1], move_IDX);
         
         if(!makeMove( move[0].replace(/\+|#/,""), 1)){
@@ -326,6 +373,7 @@ function makeMove(move, color){ //needs to return false for impossible move
     //assumption: move_IDX refers to locations of pieces
     //before move. Potentials are set up. New positions to be added
     //at index move_IDX + 1
+    
     for(var i=0; i<16; i++){
         whites[i].pos[move_IDX+1] = whites[i].pos[move_IDX];
         blacks[i].pos[move_IDX+1] = blacks[i].pos[move_IDX];
@@ -375,7 +423,6 @@ function makeMove(move, color){ //needs to return false for impossible move
     var oldPos = moving_piece.pos[move_IDX]; //GOOD
     moving_piece.pos[move_IDX+1] = newPos;
     occupied[newPos[0]-1][newPos[1]-1] = color;
-    
     occupied[oldPos[0]-1][oldPos[1]-1] = 0;
     return true;
     
@@ -548,7 +595,65 @@ function settleAmbiguity( move, newPos, color, movers){
     }
     else{
         //case2
-        report("CASE 2, CAN'T ACCOUNT!");
+        //Right, a bit tricky here.
+        var potential_mover, other_color, winner, potpos, king_pos, temp;
+        //for each potential mover
+        for(var i=0 ; i<movers.length; i++){
+            winner = true;
+            potential_mover = movers[i];
+            report("Testing piece on position " +potential_mover.pos[move_IDX]);
+            
+            //make the move
+            var oldPos = potential_mover.pos[move_IDX]; //GOOD
+            potential_mover.pos[move_IDX+1] = newPos;
+            temp = occupied[newPos[0]-1][newPos[1]-1];
+            occupied[newPos[0]-1][newPos[1]-1] = color;
+            occupied[oldPos[0]-1][oldPos[1]-1] = 0;
+        
+            //update potentials
+            move_IDX++;
+            updatePotentialMoves();
+            move_IDX--;
+            //for each piece of OTHER color
+            var others;
+            if(color == 1){
+                king_pos = whites[4].pos[move_IDX];
+                others = blacks;
+            }else{
+                others = whites;
+                king_pos = blacks[4].pos[move_IDX];
+            }
+        
+            //for each pos in potential
+            //same pos as king?
+            //else, undo damage, return piece
+         outerloop:
+            for(var j=0; j<others.length;j++){
+                other_color = others[j];
+                for(var k = 0; k<other_color.potential.length; k++){
+                    potpos = other_color.potential[k];
+                    if(potpos[0] == king_pos[0] && potpos[1] == king_pos[1]){ // moves into check!
+                        winner = false;
+                        report("No good! Moving that piece puts in check from piece at "+other_color.pos[move_IDX]);
+                        break outerloop;
+                    }
+                }
+            }
+            if(winner){
+                //leave move made
+                return potential_mover;
+            }
+            
+            potential_mover.pos[move_IDX+1] = oldPos;
+            occupied[newPos[0]-1][newPos[1]-1] = temp;
+            occupied[oldPos[0]-1][oldPos[1]-1] = color;
+            
+            
+            //unmake the move
+            //update potentials
+            updatePotentialMoves();
+        }
+        report("AMBIGUITY NOT SOLVED PROPERLY!");
         return movers[0];
     }
     
@@ -568,9 +673,6 @@ function leftClick(){
             document.getElementById(""+(move_IDX-1)).style.background = "#C0C0C0";
         }
         document.getElementById(""+(move_IDX)).style.background = "white";
-        
-        
-        
     }
 }
 function rightClick(){
@@ -582,10 +684,6 @@ function rightClick(){
             document.getElementById(""+(move_IDX-2)).style.background = "white";
         }
         document.getElementById(""+(move_IDX-1)).style.background = "#C0C0C0";
-        
-        
-        
-        
     }
 }
 
