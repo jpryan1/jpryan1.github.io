@@ -565,7 +565,7 @@ function leftClick(){
         updatePieces();
         
         if(move_IDX>0){
-            document.getElementById(""+(move_IDX-1)).style.background = "#00FFFF";
+            document.getElementById(""+(move_IDX-1)).style.background = "#C0C0C0";
         }
         document.getElementById(""+(move_IDX)).style.background = "white";
         
@@ -581,7 +581,7 @@ function rightClick(){
         if(move_IDX>1){
             document.getElementById(""+(move_IDX-2)).style.background = "white";
         }
-        document.getElementById(""+(move_IDX-1)).style.background = "#00FFFF";
+        document.getElementById(""+(move_IDX-1)).style.background = "#C0C0C0";
         
         
         
