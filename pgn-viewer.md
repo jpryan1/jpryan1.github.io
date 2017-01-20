@@ -79,6 +79,6 @@ table.tab td{
 	</div>
 </div>
 <br />
-This PGN viewer cannot yet handle pawn promotions :/. 
+[Source](https://github.com/jpryan1/jpryan1.github.io/blob/master/chess/chess.js). This PGN viewer cannot yet handle pawn promotions :/. 
 <p id="status" > </p>
 <p style="color:red;" id="debug" ></p>
