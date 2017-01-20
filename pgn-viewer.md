@@ -71,10 +71,10 @@ table.tab td{
 	<img id="left" onclick="leftClick()" style="position:relative;left:180px" src="/images/chess/left.png" /> 
 	<img id="right" onclick="rightClick()" style="position:relative;left:220px" src="/images/chess/right.png" />
 	<div style="position:relative;">
-		<input type="text" id="pgn" value="">
+		<input type="text" id="pgn" value="" placeholder="Enter PGN here">
 		<button onclick="pgnSubmit()">Submit</button>
 		<button onclick="reset()">Reset</button>
-		<button onclick="reverse()">Reverse</button>
+		<button onclick="reverse()">Switch sides</button>
         <button onclick="example()">Example</button>
 	</div>
 </div>
