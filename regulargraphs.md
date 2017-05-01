@@ -4,88 +4,107 @@ title: (2,4) Regular Graphs
 permalink: /regulargraphs
 ---
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph9.png"><img style="width:400px;" src="/images/graphs/graph9.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph11.png"><img style="width:400px;" src="/images/graphs/graph11.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph19.png"><img style="width:400px;" src="/images/graphs/graph19.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph23.png"><img style="width:400px;" src="/images/graphs/graph23.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph30.png"><img style="width:400px;" src="/images/graphs/graph30.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph36.png"><img style="width:400px;" src="/images/graphs/graph36.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph40.png"><img style="width:400px;" src="/images/graphs/graph40.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph48.png"><img style="width:400px;" src="/images/graphs/graph48.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph49.png"><img style="width:400px;" src="/images/graphs/graph49.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph62.png"><img style="width:400px;" src="/images/graphs/graph62.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph60.png"><img style="width:400px;" src="/images/graphs/graph60.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph73.png"><img style="width:400px;" src="/images/graphs/graph73.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph72.png"><img style="width:400px;" src="/images/graphs/graph72.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph85.png"><img style="width:400px;" src="/images/graphs/graph85.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph84.png"><img style="width:400px;" src="/images/graphs/graph84.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph108.png"><img style="width:400px;" src="/images/graphs/graph108.png" /></a></figure></div>
 
 
 <div style="text-align:center;"><figure><a href="/images/graphs/graph97.png"><img style="width:400px;" src="/images/graphs/graph97.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph109.png"><img style="width:400px;" src="/images/graphs/graph109.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph120.png"><img style="width:400px;" src="/images/graphs/graph120.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph123.png"><img style="width:400px;" src="/images/graphs/graph123.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph133.png"><img style="width:400px;" src="/images/graphs/graph133.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph134.png"><img style="width:400px;" src="/images/graphs/graph134.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph159.png"><img style="width:400px;" src="/images/graphs/graph159.png" /></a></figure></div>
 
 
 <div style="text-align:center;"><figure><a href="/images/graphs/graph146.png"><img style="width:400px;" src="/images/graphs/graph146.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph158.png"><img style="width:400px;" src="/images/graphs/graph158.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph177.png"><img style="width:400px;" src="/images/graphs/graph177.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph171.png"><img style="width:400px;" src="/images/graphs/graph171.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph200.png"><img style="width:400px;" src="/images/graphs/graph200.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph184.png"><img style="width:400px;" src="/images/graphs/graph184.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph214.png"><img style="width:400px;" src="/images/graphs/graph214.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph202.png"><img style="width:400px;" src="/images/graphs/graph202.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph235.png"><img style="width:400px;" src="/images/graphs/graph235.png" /></a></figure></div>
 
 
 <div style="text-align:center;"><figure><a href="/images/graphs/graph225.png"><img style="width:400px;" src="/images/graphs/graph225.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph239.png"><img style="width:400px;" src="/images/graphs/graph239.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph247.png"><img style="width:400px;" src="/images/graphs/graph247.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph251.png"><img style="width:400px;" src="/images/graphs/graph251.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph259.png"><img style="width:400px;" src="/images/graphs/graph259.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph261.png"><img style="width:400px;" src="/images/graphs/graph261.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph270.png"><img style="width:400px;" src="/images/graphs/graph270.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph272.png"><img style="width:400px;" src="/images/graphs/graph272.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph281.png"><img style="width:400px;" src="/images/graphs/graph281.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph283.png"><img style="width:400px;" src="/images/graphs/graph283.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph291.png"><img style="width:400px;" src="/images/graphs/graph291.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph295.png"><img style="width:400px;" src="/images/graphs/graph295.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph301.png"><img style="width:400px;" src="/images/graphs/graph301.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph310.png"><img style="width:400px;" src="/images/graphs/graph310.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph312.png"><img style="width:400px;" src="/images/graphs/graph312.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph319.png"><img style="width:400px;" src="/images/graphs/graph319.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph324.png"><img style="width:400px;" src="/images/graphs/graph324.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph331.png"><img style="width:400px;" src="/images/graphs/graph331.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph348.png"><img style="width:400px;" src="/images/graphs/graph348.png" /></a></figure></div>
 
 
 <div style="text-align:center;"><figure><a href="/images/graphs/graph339.png"><img style="width:400px;" src="/images/graphs/graph339.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph351.png"><img style="width:400px;" src="/images/graphs/graph351.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph358.png"><img style="width:400px;" src="/images/graphs/graph358.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph367.png"><img style="width:400px;" src="/images/graphs/graph367.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph378.png"><img style="width:400px;" src="/images/graphs/graph378.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph390.png"><img style="width:400px;" src="/images/graphs/graph390.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph398.png"><img style="width:400px;" src="/images/graphs/graph398.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph410.png"><img style="width:400px;" src="/images/graphs/graph410.png" /></a></figure></div>
+
+
+<div style="text-align:center;"><figure><a href="/images/graphs/graph428.png"><img style="width:400px;" src="/images/graphs/graph428.png" /></a></figure></div>
+
