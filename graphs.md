@@ -1,3 +1,9 @@
+---
+layout: page
+title: Histograms
+permalink: /histograms
+---
+
 <div style="text-align:center;">
 <figure>
 <a href="/images/graphs/graph9.png">
