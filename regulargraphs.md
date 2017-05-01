@@ -52,7 +52,7 @@ permalink: /regulargraphs
 <div style="text-align:center;"><figure><a href="/images/graphs/graph184.png"><img style="width:400px;" src="/images/graphs/graph184.png" /></a></figure></div>
 
 
-<div style="text-align:center;"><figure><a href="/images/graphs/graph2020.png"><img style="width:400px;" src="/images/graphs/graph2020.png" /></a></figure></div>
+<div style="text-align:center;"><figure><a href="/images/graphs/graph202.png"><img style="width:400px;" src="/images/graphs/graph202.png" /></a></figure></div>
 
 
 <div style="text-align:center;"><figure><a href="/images/graphs/graph225.png"><img style="width:400px;" src="/images/graphs/graph225.png" /></a></figure></div>
