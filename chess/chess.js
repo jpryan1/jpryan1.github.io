@@ -529,7 +529,7 @@ function processCastle(move, color){
     }else{
         if(color==1){
             whites[4].pos[move_IDX+1] = [1,3];
-            whites[0].pos[move_IDX+1] = [1,2];
+            whites[0].pos[move_IDX+1] = [1,4];
             occupied[0][0] = 0;
             occupied[0][1] = 0;
             occupied[0][2] = 1;
@@ -538,7 +538,7 @@ function processCastle(move, color){
             
         }else{
             blacks[4].pos[move_IDX+1] = [8,3];
-            blacks[0].pos[move_IDX+1] = [8,2];
+            blacks[0].pos[move_IDX+1] = [8,4];
             occupied[7][0] = 0;
             occupied[7][1] = 0;
             occupied[7][2] = 2;
