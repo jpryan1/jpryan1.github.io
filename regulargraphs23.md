@@ -9,7 +9,7 @@ p{display:inline;}
 
 {% for image in site.static_files %}
   {% if image.path contains 'images/reg_graphs23/' %}
-<div <a href="{{image.path}}"><img style="width:400px;" src="{{image.path}}" />
+ <a href="{{image.path}}"><img style="width:400px;" src="{{image.path}}" />
 </a>
  {% endif %}
 {% endfor %}
