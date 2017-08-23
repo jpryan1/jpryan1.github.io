@@ -4,11 +4,12 @@ title: (2,4) Regular Graphs
 permalink: /regulargraphs
 ---
 
-test1
-{% for img in site.static_files %}
-  {{img.path}}  
+{% for image in site.static_files %}
+  {% if image.path contains 'images/reg_graphs/' %}
+     <div style="text-align:center;"><figure><a href="{{image.path}}"><img style="width:400px;" src="{{image.path}}" /></a></figure></div>
+ {% endif %}
 {% endfor %}
-test2
+test4
 <div style="text-align:center;"><figure><a href="/images/graphs/graph11.png"><img style="width:400px;" src="/images/graphs/graph11.png" /></a></figure></div>
 
 
