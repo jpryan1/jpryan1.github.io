@@ -5,7 +5,7 @@ permalink: /regulargraphs
 ---
 
 test1
-{% for img in site.images %}
+{% for img in site.static_files %}
   {{img.name}}  
 {% endfor %}
 test2
