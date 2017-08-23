@@ -14,7 +14,7 @@ author:
     scholar:
 
 # Build settings
-markdown: kramdown
+markdown: maruku
 highlighter: rouge
 
 # Settings for analytics helper
