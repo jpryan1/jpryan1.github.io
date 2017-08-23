@@ -4,10 +4,11 @@ title: (2,4) Regular Graphs
 permalink: /regulargraphs
 ---
 
-
+test1
 {% for img in site.images %}
-  <img src="/_graphs/{{img.name}}" /> test
+  <img src="/_graphs/{{img.name}}" /> 
 {% endfor %}
+test2
 <div style="text-align:center;"><figure><a href="/images/graphs/graph11.png"><img style="width:400px;" src="/images/graphs/graph11.png" /></a></figure></div>
 
 
