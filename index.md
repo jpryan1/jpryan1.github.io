@@ -15,5 +15,5 @@ Hello! I am a CS PhD student at Cornell University concentrating in scientific c
 
 John Paul Ryan <br />
 Phone: (518)-925-7228 <br/>
-Email: The format is XXXX (at) cs (dot) cornell (dot) edu and you can replace the X's with johnryan
+Email: The format is XXXX (at) cs (dot) cornell (dot) edu and you can replace the X's with johnryan. <a href="https://en.wikipedia.org/wiki/Email_address_harvesting" >Why am I writing it this way?</a>
 
