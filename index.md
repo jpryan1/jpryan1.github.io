@@ -16,6 +16,5 @@ Currently I am interning at Google in Los Angeles for the Summer of 2018, workin
 ## Contact
 
 John Paul Ryan <br />
-Phone: (518)-925-7228 <br/>
 Email: The format is XXXX (at) cs (dot) cornell (dot) edu and you can replace the X's with johnryan. <a href="https://en.wikipedia.org/wiki/Email_address_harvesting" >Why am I writing it this way?</a>
 
