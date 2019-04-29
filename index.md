@@ -4,7 +4,7 @@ title: Bio
 permalink: /
 ---
 
-{% include image.html url="images/jpr.jpg" caption="" max_width="300px" align="right" %}
+{% include image.html url="images/jpr.jpg" caption="" max_width="100px" align="right" %}
 
 Hello! I am a CS PhD student at Cornell University concentrating in scientific computing. In 2016 I graduated from NYU with a BA in Mathematics and Computer Science. On this site, you can learn about my current and past research projects, publications, and education, as well as some blog posts and other interests.  
 
