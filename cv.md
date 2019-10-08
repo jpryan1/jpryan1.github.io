@@ -4,4 +4,4 @@ title: CV
 permalink: /cv/
 ---
 
-[Here](/documents/curriculum-vitae.pdf) is a PDF of my CV, which was last updated in September 2019.
+[Here](/documents/JohnRyanCV.pdf) is a PDF of my CV, which was last updated in September 2019.
