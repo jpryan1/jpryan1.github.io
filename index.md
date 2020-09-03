@@ -4,7 +4,7 @@ title: Bio
 permalink: /
 ---
 
-{% include image.html url="images/jpr2.jpg" caption="" max_width="100px" align="right" %}
+{% include image.html url="images/jpr.jpg" caption="" max_width="100px" align="right" %}
 
 Hello! I am a CS PhD candidate at Cornell University concentrating in scientific computing. My research focuses on developing fast efficient algorithms based on analytic and algebraic methods to process linear systems arising from discretizing kernel functions in domains with very large amounts of data (for example, factoring million by million matrices). 
 
