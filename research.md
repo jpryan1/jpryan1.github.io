@@ -49,6 +49,8 @@ pubs:
 {{pub.author}}<br />
 *{{pub.journal}}*
  *{{pub.year}}* <br />
-{% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}<br />{% endif %}
-
+{% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}
+{% endif %}
+ <br /> <br /> <br />
 {% endfor %}
+
