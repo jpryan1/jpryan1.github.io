@@ -51,6 +51,6 @@ pubs:
  *{{pub.year}}* <br />
 {% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}
 {% endif %}
- <br /> <br /> <br />
+ <br />
 {% endfor %}
 
