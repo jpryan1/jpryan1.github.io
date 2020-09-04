@@ -64,11 +64,12 @@ pubs:
 
 {% for pub in page.pubs %}
 {% if pub.image %}
-{% include image.html url=pub.image caption="" height="100px" align=thumbnail %}
+{% include image.html url=pub.image caption="" height="125px" align=thumbnail %}
 {% endif %}
 [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br />
 {{pub.author}}<br />
-*{{pub.journal}} {{pub.year}}* <br />
+*{{pub.journal}}*
+{% if pub.year %}*{{pub.year}}*  {% endif %} <br />
 {% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}
 {% endif %}
  <br />
