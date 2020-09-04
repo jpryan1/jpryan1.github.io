@@ -44,7 +44,7 @@ pubs:
       image:   "/images/pgn.png"
       media:
         - name: "PGN Viewer"
-          url:  "\pgn-viewer"
+          url:  "/pgn-viewer"
           
 ---
 
