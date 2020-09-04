@@ -8,7 +8,6 @@ pubs:
       author:  "John Paul Ryan and Anil Damle"
       journal: "Submitted"
       note:    ""
-      year:    ""
       url:     "https://arxiv.org/abs/2001.11619"
       doi:     ""
       image:   "/images/parskel.png"
@@ -72,6 +71,7 @@ pubs:
 {% if pub.year %}*{{pub.year}}*  {% endif %} <br />
 {% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}
 {% endif %}
+ <br />
  <br />
 {% endfor %}
 
