@@ -20,7 +20,10 @@ pubs:
       year:    "(2019)"
       url:     "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.012903"
       doi:     ""
-      image:   "/images/counterrotate.png"
+      image:   "/images/counterrotation.png"
+      media:
+        - name: "Science Bulletin article"
+          url: "https://sciencebulletin.org/solving-the-pancake-problem/"
 
     - title:   "Path Planning for Simple Robots using Soft Subdivision Search"
       author:  "Ching-Hsiang Hsu, John Paul Ryan, and Chee Yap"
@@ -65,8 +68,7 @@ pubs:
 {% endif %}
 [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br />
 {{pub.author}}<br />
-*{{pub.journal}}*
- *{{pub.year}}* <br />
+*{{pub.journal}} {{pub.year}}* <br />
 {% if pub.media %}Media: {% for article in pub.media %}[[{{article.name}}]({{article.url}})]{% endfor %}
 {% endif %}
  <br />
