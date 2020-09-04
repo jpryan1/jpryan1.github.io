@@ -4,6 +4,24 @@ permalink: /research/
 title: Research
 pubs:
 
+    - title:   "Parallel Skeletonization for Integral Equations in Evolving Multiply-Connected Domains"
+      author:  "John Paul Ryan and Anil Damle"
+      journal: "Submitted"
+      note:    ""
+      year:    ""
+      url:     "https://arxiv.org/abs/2001.11619"
+      doi:     ""
+      image:   "/images/parskel.png"
+
+    - title:   "Geometric frustration induces the transition between rotation and counterrotation in swirled granular media"
+      author:  "Lisa M. Lee, John Paul Ryan, Yoav Lahini, Miranda Holmes-Cerfon, and Shmuel M. Rubinstein"
+      journal: "Physical Review E"
+      note:    ""
+      year:    "(2019)"
+      url:     "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.012903"
+      doi:     ""
+      image:   "/images/counterrotate.png"
+
     - title:   "Path Planning for Simple Robots using Soft Subdivision Search"
       author:  "Ching-Hsiang Hsu, John Paul Ryan, and Chee Yap"
       journal: "32nd International Symposium on Computational Geometry"
