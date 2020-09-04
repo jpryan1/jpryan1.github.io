@@ -4,15 +4,6 @@ permalink: /projects/
 title: Projects
 pubs:
 
-    - title:   "Counter-Rotation of 'Pancake' of Sliding Discs in a Swirling Environment"
-      note:    "I am currently working with <a href='http://cims.nyu.edu/~holmes/'> Miranda Holmes-Cerfon </a> on a physical simulation of sliding discs inside a circular boundary which moves around in a circle (see the demo below). When a certain density of discs inside the boundary is achieved, an interesting 'counter-rotation' phenomenon occurs. Our goal is to understand intuitively why this takes place, and what are the main contributing factors (ie friction, speed, etc). This is a summer research project funded by the Courant Institute of Mathematical Sciences."
-      image:   "/images/pic.png"
-      media:
-        - name: "Demo"
-          url:  "https://youtu.be/AdOeYogRBKk"
-        - name: "Source"
-          url: "https://github.com/jpryan1/swirling-disks"
-          
         
     - title:   "UAV Pursuit of a Moving Target"
       note:    "This was a group project for my Robotics class at NYU, and my group members were Andrew Klingelhofer and Jacqui Abalo. We passed video from a flying Parrot Bebop 2.0 drone through the object tracking program described in <a href='http://www.gnebehay.com/publications/wacv_2014/wacv_2014.pdf'> this </a> paper to track the clothing of a person in front of the drone. We then passed the results of the object tracking program through a Kalman Filter, and, based on these filtered results, issued commands to the drone to navigate so as to keep the object in view. The hardest part was getting video feed from the drone to the computer! More details are in the paper."
@@ -46,6 +37,15 @@ pubs:
           url:  "/documents/cinema.pdf"
         - name: "Source"
           url: "https://github.com/jpryan1/cinema-info"
+          
+        
+       - title:   "Web PGN-based Chess Visualizer"
+      note:    "As a toy project, I developed a visualizer for chess games based on their portable game notation (typically provided by, for example, chess.com and lichess.org) on my personal website. I found it a fun way to begin to learn JavaScript and explore the considerations that go into computer chess games. My original idea was to eventually write a simple engine to play against, but I've since decided to explore writing bots for other games (in particular, where there is an active approachable competitive engine scene). You can upload a PGN to see it at the below link (barring some things I haven't implemented like promotion), or click 'Example' to see Bobby Fischer's 'Game of the Century.' Pay no attention to the source code, it is that of a John long ago just learning how to program :)."
+      image:   "/images/pgn.png"
+      media:
+        - name: "PGN Viewer"
+          url:  "\pgn-viewer"
+          
 ---
 
 
