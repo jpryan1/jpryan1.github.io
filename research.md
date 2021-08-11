@@ -4,13 +4,23 @@ permalink: /research/
 title: Research
 pubs:
 
-    - title:   "Parallel Skeletonization for Integral Equations in Evolving Multiply-Connected Domains"
-      author:  "John Paul Ryan and Anil Damle"
+    - title:   "The Fast Kernel Transform"
+      author:  "John Paul Ryan, Sebastian Ament, Carla Gomes, and Anil Damle"
       journal: "Submitted"
       note:    ""
-      url:     "https://arxiv.org/abs/2001.11619"
+      url:     "https://arxiv.org/abs/2106.04487"
+      doi:     ""
+      image:   "/images/fkt.png"
+
+    - title:   "Parallel Skeletonization for Integral Equations in Evolving Multiply-Connected Domains"
+      author:  "John Paul Ryan and Anil Damle"
+      journal: "SIAM Journal on Scientific Computing"
+      note:    ""
+      year:    "(2021)"
+      url:     "https://epubs.siam.org/doi/abs/10.1137/20M1316330"
       doi:     ""
       image:   "/images/parskel.png"
+      
 
     - title:   "Geometric frustration induces the transition between rotation and counterrotation in swirled granular media"
       author:  "Lisa M. Lee, John Paul Ryan, Yoav Lahini, Miranda Holmes-Cerfon, and Shmuel M. Rubinstein"
